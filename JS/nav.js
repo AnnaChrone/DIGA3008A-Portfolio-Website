@@ -1,31 +1,50 @@
-const links = [
-    {
-        text: "Games",
-        url: "./HTML/Games.html"
-    },
-    {
-        text: "Engineering Projects",
-        url: "./HTML/Engineering.html"
-    },
-    {
-        text: "About Me",
-        url: "./HTML/AboutMe.html"
-    }
+// HOME LINKS
+const Homelinks = [
+    { text: "Games", url: "./HTML/Games.html" },
+    { text: "Engineering Projects", url: "./HTML/Engineering.html" },
+    { text: "About Me", url: "./HTML/AboutMe.html" }
 ];
 
-const container = document.getElementById("home-links");
+const homeContainer = document.getElementById("home-links");
+const homeUl = document.createElement("ul");
 
-const ul = document.createElement("ul");
+Homelinks.forEach(homeLink => {
+    const homeLi = document.createElement("li");
+    const homeA = document.createElement("a");
 
-links.forEach(link => {
-    const li = document.createElement("li");
-    const a = document.createElement("a");
+    homeA.textContent = homeLink.text;
+    homeA.href = homeLink.url;
 
-    a.textContent = link.text;
-    a.href = link.url;
-
-    li.appendChild(a);
-    ul.appendChild(li);
+    homeLi.appendChild(homeA);
+    homeUl.appendChild(homeLi);
 });
 
-container.appendChild(ul);
+if (homeContainer) {
+    homeContainer.appendChild(homeUl);
+}
+
+// PERSISTENT NAV
+const NavBarlinks = [
+    { text: "Home", url: "./index.html" },
+    { text: "Games", url: "./HTML/Games.html" },
+    { text: "Engineering", url: "./HTML/Engineering.html" },
+    { text: "About", url: "./HTML/AboutMe.html" }
+];
+
+const navContainer = document.getElementById("persistent-nav");
+const navUl = document.createElement("ul");
+
+NavBarlinks.forEach(navLink => {
+    const navLi = document.createElement("li");
+    const a = document.createElement("a");
+
+    a.textContent = navLink.text;
+    a.href = navLink.url;
+
+    navLi.appendChild(a);
+    navUl.appendChild(navLi);
+});
+
+if (navContainer) {
+    navContainer.appendChild(navUl);
+}
