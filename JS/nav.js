@@ -56,20 +56,21 @@ const contactLinks = [
         url: "mailto:me@email.com"
     },
     {
-        type: "instagram",
-        url: "https://instagram.com/joanna_chronis",
-        icon: "./Media/InstaLogo.png"
-    },
-    {
         type: "linkedin",
         url: "https://www.linkedin.com/in/joanna-chronis-04821b3b0/",
         icon: "./Media/LinkedInLogo.png"
     },
-    {
+        {
         type: "discord",
         url: "https://discordapp.com/users/743488118811918386",
         icon: "./Media/DiscordLogo.png"
+    },
+    {
+        type: "instagram",
+        url: "https://instagram.com/joanna_chronis",
+        icon: "./Media/InstaLogo.png"
     }
+
 ];
 
 const contactContainer = document.getElementById("contact-me");
@@ -81,6 +82,7 @@ const contactEmail = document.createElement("p");
 contactEmail.textContent = contactLinks[0].text;
 
 const contactUl = document.createElement("ul");
+contactUl.id = "contact-icons";
 
 // skip first item as it is not a link
 contactLinks.slice(1).forEach(link => {
