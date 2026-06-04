@@ -13,12 +13,15 @@ const navUl = document.createElement("ul");
 NavBarlinks.forEach(navLink => {
     const navLi = document.createElement("li");
     const navA = document.createElement("a");
+    const spacer = document.createElement("li");
 
     navA.textContent = navLink.text;
     navA.href = navLink.url;
+    spacer.textContent = "|";
 
     navLi.appendChild(navA);
     navUl.appendChild(navLi);
+    navUl.appendChild(spacer);
 });
 
 if (navContainer) {
@@ -28,8 +31,8 @@ if (navContainer) {
 const contactLinks = [
     {
         type: "email",
-        text: "me@email.com",
-        url: "mailto:me@email.com"
+        text: "jnchronis1@gmail.com",
+        url: "mailto:jnchronis1@gmail.com"
     },
     {
         type: "linkedin",
