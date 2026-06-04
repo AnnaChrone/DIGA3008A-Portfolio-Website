@@ -38,6 +38,60 @@ h1, h2, p, a {
     color: var(--color-main);
 }
 
+/* PERSISTENT NAV */
+#persistent-nav {
+    grid-area: nav;
+    margin: 1rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#persistent-nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    align-items: center;
+}
+
+#persistent-nav a {
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+#persistent-nav a:hover {
+
+    color: #3a5a40;
+    text-decoration: underline;
+}
+
+/* CONTACT SECTION */
+#contact-me {
+    grid-area: contact;
+    padding-top: 1rem;
+    text-align: center;
+    background-color: var(--bg-contact);
+}
+
+#contact-me ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    list-style-type: none;
+}
+
+#contact-me img {
+    width: 2rem;
+    height: 2rem;
+}
+
+/* PARAGRAPHS */
+p {
+    padding: 0.5rem 0;
+}
+
 /*HOME PAGE*/
 #home-page-body {
     background-color: var(--bg-main);
@@ -132,58 +186,13 @@ h1, h2, p, a {
     width: auto;
     object-fit: contain;
 }
+/*ABOUT ME PAGE*/
+/*GAMES PAGE*/
+/*INDIV VIDEOGAME PAGE*/
+/*INDIV BOARDGAME PAGE*/
+/*INDIV GAMEBLOG PAGE*/
+/*ENGINEERING PAGE*/
+
+/*INDIV ENGINEERING PROJECT PAGE*/
 
 
-/* PERSISTENT NAV */
-#persistent-nav {
-    grid-area: nav;
-    margin: 1rem;
-    display: flex;
-    justify-content: flex-end;
-}
-
-#persistent-nav ul {
-    display: flex;
-    gap: 2rem;
-    list-style: none;
-    align-items: center;
-}
-
-#persistent-nav a {
-    font-size: 1rem;
-    font-weight: 600;
-    text-decoration: none;
-}
-
-#persistent-nav a:hover {
-
-    color: #3a5a40;
-    text-decoration: underline;
-}
-
-/* CONTACT SECTION */
-#contact-me {
-    grid-area: contact;
-    padding-top: 1rem;
-    text-align: center;
-    background-color: var(--bg-contact);
-}
-
-#contact-me ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    margin-bottom: 1rem;
-    list-style-type: none;
-}
-
-#contact-me img {
-    width: 2rem;
-    height: 2rem;
-}
-
-/* PARAGRAPHS */
-p {
-    padding: 0.5rem 0;
-}
