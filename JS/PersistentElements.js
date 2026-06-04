@@ -59,6 +59,7 @@ contactTitle.textContent = "Contact Me";
 
 const contactEmail = document.createElement("p");
 contactEmail.textContent = contactLinks[0].text;
+contactEmail.id = "email-address";
 
 const contactUl = document.createElement("ul");
 contactUl.id = "contact-icons";
