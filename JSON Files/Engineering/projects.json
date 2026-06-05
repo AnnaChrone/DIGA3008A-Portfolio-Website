@@ -6,38 +6,26 @@
         "jsonFile": "reverse2048.json"
     },
     {
-        "id": "island-mystery",
-        "title": "Island Mystery",
+        "id": "electronics",
+        "title": "Electronics Project",
         "thumbnail": "../Media/image.png",
         "jsonFile": "reverse2048.json"
     },
     {
-        "id": "island-mystery",
-        "title": "Island Mystery",
+        "id": "micros",
+        "title": "AVR Assembly lockbox",
         "thumbnail": "../Media/image.png",
         "jsonFile": "reverse2048.json"
     },
     {
-        "id": "island-mystery",
-        "title": "Island Mystery",
+        "id": "elendesign",
+        "title": "magnetic motor project",
         "thumbnail": "../Media/image.png",
         "jsonFile": "reverse2048.json"
     },
     {
-        "id": "island-mystery",
-        "title": "Island Mystery",
-        "thumbnail": "../Media/image.png",
-        "jsonFile": "reverse2048.json"
-    },
-    {
-        "id": "island-mystery",
-        "title": "Island Mystery",
-        "thumbnail": "../Media/image.png",
-        "jsonFile": "reverse2048.json"
-    },
-        {
-        "id": "island-mystery",
-        "title": "Island Mystery",
+        "id": "engineeringforpeople",
+        "title": "Engineering Without Borders",
         "thumbnail": "../Media/image.png",
         "jsonFile": "reverse2048.json"
     }

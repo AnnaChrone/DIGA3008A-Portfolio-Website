@@ -37,17 +37,17 @@ const contactLinks = [
     {
         type: "linkedin",
         url: "https://www.linkedin.com/in/joanna-chronis-04821b3b0/",
-        icon: "/Media/LinkedInLogo.png"
+        icon: "/Media/ContactLinkImages/LinkedInLogo.png"
     },
         {
         type: "discord",
         url: "https://discordapp.com/users/743488118811918386",
-        icon: "/Media/DiscordLogo.png"
+        icon: "/Media/ContactLinkImages/DiscordLogo.png"
     },
     {
         type: "instagram",
         url: "https://instagram.com/joanna_chronis",
-        icon: "/Media/InstaLogo.png"
+        icon: "/Media/ContactLinkImages/InstaLogo.png"
     }
 
 ];

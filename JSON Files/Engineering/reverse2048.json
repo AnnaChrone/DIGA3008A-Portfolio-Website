@@ -1,16 +1,58 @@
 {
-    "title": "Reverse2048",
-    "year": "2025",
-    "description": "A custom strategy game inspired by 2048.",
-    "technologies": [
-        "C++",
-        "Algorithms",
-        "Object-Oriented Programming"
-    ],
-    "images": [
-        "../Images/Projects/Reverse2048/1.png",
-        "../Images/Projects/Reverse2048/2.png",
-        "../Images/Projects/Reverse2048/3.png"
-    ],
-    "github": "https://github.com/..."
+  "title": "Reverse 2048",
+  "year": 2025,
+  "duration": "6 Months",
+  "schoolYear": "2nd Year",
+  "type": ["Software Development"],
+
+  "downloadFile": "../downloads/reverse2048.zip",
+
+  "sections": [
+    {
+      "type": "overview",
+      "heading": "Project Overview",
+      "content": "A modified version of 2048 with reverse  merging mechanics bleeh blah blah blah A modified version of 2048 with reverse  merging mechanics bleeh blah blah blahA modified version of 2048 with reverse  merging mechanics bleeh blah blah blahA modified version of 2048 with reverse  merging mechanics bleeh blah blah blahA modified version of 2048 with reverse  merging mechanics bleeh blah blah blahA modified version of 2048 with reverse  merging mechanics bleeh blah blah blahA modified version of 2048 with reverse  merging mechanics bleeh blah blah blah "
+    },
+
+    {
+      "type": "image",
+      "src": "../Media/Image.png",
+      "caption": "Game board layout"
+    },
+
+        {
+      "type": "image",
+      "src": "../Media/Image.png",
+      "caption": "Game board layout"
+    },
+            {
+      "type": "image",
+      "src": "../Media/Image.png",
+      "caption": "Game board layout"
+    },
+
+    {
+      "type": "contribution",
+      "heading": "My Contribution",
+      "content": "Designed the movement system and AI logic..."
+    },
+
+    {
+      "type": "image",
+      "src": "../Media/Image.png",
+      "caption": "AI decision tree"
+    },
+
+    {
+      "type": "technical",
+      "heading": "Implementation & Technical Details",
+      "content": "Built in C++ using a grid-based system..."
+    },
+    {
+  "type": "download",
+    "heading": "Download Report",
+  "file": "../downloads/your-project.zip",
+  "label": "Download Project"
+}
+  ]
 }
