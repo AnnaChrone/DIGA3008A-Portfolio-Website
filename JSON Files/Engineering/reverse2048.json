@@ -1,0 +1,16 @@
+{
+    "title": "Reverse2048",
+    "year": "2025",
+    "description": "A custom strategy game inspired by 2048.",
+    "technologies": [
+        "C++",
+        "Algorithms",
+        "Object-Oriented Programming"
+    ],
+    "images": [
+        "../Images/Projects/Reverse2048/1.png",
+        "../Images/Projects/Reverse2048/2.png",
+        "../Images/Projects/Reverse2048/3.png"
+    ],
+    "github": "https://github.com/..."
+}
