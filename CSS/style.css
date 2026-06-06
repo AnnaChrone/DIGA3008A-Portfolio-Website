@@ -356,13 +356,13 @@ ul {
     background-color: var(--bg-primary);
 }
 
-.carousel-track {
+.carousel-track-about-me {
     display: flex;
     flex-direction: column;
     animation: scrollUp 50s linear infinite;
 }
 
-.carousel-track img {
+.carousel-track-about-me img {
     width: 100%;
     padding: 1rem;
     height: auto;
@@ -379,12 +379,69 @@ ul {
 }
 
 /* pause on hover */
-#about-me-carousel:hover .carousel-track {
+#about-me-carousel:hover .carousel-track-about-me {
     animation-play-state: paused;
 }
 
 
 /* GAMES PAGE*/
+#games-page-body {
+    background-color: var(--bg-primary);
+
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;;
+
+    grid-template-areas:
+        "nav"
+        "header"
+        "content"
+        "contact";
+
+}
+#Games {
+    grid-area: content;
+}
+
+.carousel-games
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.carousel-track
+{
+    display: flex;
+    gap: 2rem;
+}
+
+.game-card
+{
+    width: 20rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+.game-thumbnail
+{
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.game-title
+{
+    margin-top: 0.75rem;
+    text-align: center;
+}
+
+
 
 /*INDIVIDUAL BOARDGAME PAGE*/
 

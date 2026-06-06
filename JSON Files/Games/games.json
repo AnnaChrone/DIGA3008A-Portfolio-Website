@@ -1,0 +1,65 @@
+{
+    "videoGames": [
+        {
+            "title": "Dreamscape",
+            "thumbnail": "../Media/image.png",
+            "file": "reverse2048.json"
+        },
+        {
+            "title": "Starship Salvage",
+            "thumbnail": "../Media/image.png",
+            "file": "reverse2048.json"
+        },
+                {
+            "title": "The Witch's Brew",
+            "thumbnail": "../Media/image.png",
+            "file": "reverse2048.json"
+        }
+    ],
+
+    "boardGames": [
+        {
+            "title": "The Grid",
+            "thumbnail": "../Media/image.png",
+            "file": "reverse2048.json"
+        },
+                {
+            "title": "Prison Break",
+            "thumbnail": "../Media/image.png",
+            "file": "reverse2048.json"
+        },
+                {
+            "title": "Linchpin",
+            "thumbnail": "../Media/image.png",
+            "file": "reverse2048.json"
+        },
+                {
+            "title": "Alice in Wonderland",
+            "thumbnail": "../Media/image.png",
+            "file": "reverse2048.json"
+        },
+                {
+            "title": "Hush house",
+            "thumbnail": "../Media/image.png",
+            "file": "reverse2048.json"
+        }
+    ],
+
+    "blogs": [
+        {
+            "title": "Spirit Farer",
+            "thumbnail": "../Media/image.png",
+            "file": "reverse2048.json"
+        },
+                {
+            "title": "Don't Starve",
+            "thumbnail": "../Media/image.png",
+            "file": "reverse2048.json"
+        },
+                        {
+            "title": "Until Dawn",
+            "thumbnail": "../Media/image.png",
+            "file": "reverse2048.json"
+        }
+    ]
+}
