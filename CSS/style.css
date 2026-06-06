@@ -206,6 +206,10 @@ ul {
     padding-bottom: 0.8rem;
 }
 
+#email-address {
+    margin: 0;
+}
+
 #contact-me ul {
     display: flex;
     justify-content: center;
