@@ -35,5 +35,16 @@
         }
     ],
 
-    "gameLink": "..."
+         "gameLinks": [
+    {
+      "label": "GitHub Repo",
+      "url": "https://github.com/yourrepo",
+      "type": "external"
+    },
+    {
+      "label": "Download Ruleset",
+      "url": "../files/ruleset.zip",
+      "type": "download"
+    }
+  ]
 }

@@ -76,22 +76,43 @@ function renderVideoGame(game)
 
     renderMembers(game.members);
 
-    document.getElementById("github-link")
-        .href =
-        game.githubLink;
+    const linksContainer =
+    document.getElementById("download-links");
 
-    document.getElementById("project-link")
-        .href =
-        game.projectLink;
+linksContainer.innerHTML = "";
 
-    document.getElementById("reflection-link")
-        .href =
-        game.reflectionFile;
+game.gameLinks.forEach(link =>
+{
+    const a =
+        document.createElement("a");
+
+    a.textContent =
+        link.label;
+
+    a.href =
+        link.url;
+
+    if(link.type === "external")
+    {
+        a.target = "_blank";
+        a.rel = "noopener noreferrer";
+    }
+
+    if(link.type === "download")
+    {
+        a.setAttribute("download", "");
+    }
+
+    a.classList.add("gameLink");
+
+    linksContainer.appendChild(a);
+});
 
     document.getElementById("play-title")
         .textContent =
         game.title;
 }
+
 
 function renderImagePair(images, containerId)
 {
