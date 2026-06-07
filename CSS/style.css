@@ -496,7 +496,11 @@ ul {
 
 #boardgame-page {
     grid-area: content;
+    max-width: 1920px;
+    width: 100%;
     padding-left: 2rem;
+    padding-right: 4rem;
+
 }
 
 #boardgame-page header {
@@ -513,14 +517,6 @@ ul {
     margin: 0;
     padding: 0;
     
-}
-
-#project-container {
-    grid-area: content;
-    max-width: 1920px;
-    width: 100%;
-    padding-left: 1rem;
-    padding-right: 4rem;
 }
 
 
@@ -563,6 +559,22 @@ ul {
     margin-bottom: 3rem;
 }
 
+#download-links a {
+    font-family: var(--font-body);
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 0.8rem 1.2rem;
+
+    color: var(--text-heading);
+
+    transition: transform 0.2s ease;
+}
+
+
+#download-links a:hover {
+    transform: translateY(-2px);
+}
+
 
 .image-pair {
     display: grid;
@@ -589,27 +601,11 @@ ul {
     width: 1.2rem;
     height: 1.2rem;
     flex-shrink: 0;
+    transform: translateY(10%);
 }
 
-.download-link {
-    display: inline-flex; 
-    align-items: center;
-    gap: 0.6rem;
-    font-family: var(--font-body);
-    text-decoration: none;
 
-    padding: 0.8rem 1.2rem;
-    border-radius: 0.5rem;
 
-    background-color: var(--bg-secondary);
-    color: var(--text-heading);
-
-    transition: transform 0.2s ease;
-}
-
-.download-link:hover {
-    transform: translateY(-2px);
-}
 
 
 /*INDIVIDUAL VIDEOGAME PAGE*/
@@ -647,7 +643,7 @@ ul {
     grid-area: content;
     max-width: 1920px;
     width: 100%;
-    padding-left: 1rem;
+    padding-left: 2rem;
     padding-right: 4rem;
 }
 
@@ -846,7 +842,7 @@ ul {
     grid-area: content;
     max-width: 1920px;
     width: 100%;
-    padding-left: 1rem;
+    padding-left: rem;
     padding-right: 4rem;
 }
 

@@ -86,11 +86,10 @@ game.gameLinks.forEach(link =>
     const a =
         document.createElement("a");
 
-    a.textContent =
-        link.label;
-
     a.href =
         link.url;
+
+    a.classList.add("gameLink");
 
     if(link.type === "external")
     {
@@ -101,9 +100,27 @@ game.gameLinks.forEach(link =>
     if(link.type === "download")
     {
         a.setAttribute("download", "");
-    }
 
-    a.classList.add("gameLink");
+        a.innerHTML = `
+            <svg class="download-icon" viewBox="0 0 24 24" fill="none">
+                <path d="M12 3v10m0 0l4-4m-4 4l-4-4"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"/>
+                <path d="M4 17v3h16v-3"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"/>
+            </svg>
+            ${link.label}
+        `;
+    }
+    else
+    {
+        a.textContent =
+            link.label;
+    }
 
     linksContainer.appendChild(a);
 });
