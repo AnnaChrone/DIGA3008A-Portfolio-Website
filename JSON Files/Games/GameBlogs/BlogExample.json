@@ -1,0 +1,39 @@
+{
+    "gameTitle": "Wahwahahah",
+
+    "blogTitle": "Designing the AI",
+
+    "publishDate": "2025-06-01",
+
+    "heroImage": "...",
+
+    "background": "...",
+
+    "sections": [
+        {
+            "heading": "Design Goals",
+
+            "content": [
+                {
+                    "type": "paragraph",
+                    "text": "..."
+                },
+
+                {
+                    "type": "imagePair",
+                    "images": [
+                        "...",
+                        "..."
+                    ]
+                },
+
+                {
+                    "type": "paragraph",
+                    "text": "..."
+                }
+            ]
+        }
+    ],
+
+    "gameLink": "..."
+}

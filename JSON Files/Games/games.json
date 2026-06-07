@@ -3,17 +3,17 @@
         {
             "title": "Dreamscape",
             "thumbnail": "../Media/image.png",
-            "file": "reverse2048.json"
+            "file": "WitchesBrew.json"
         },
         {
             "title": "Starship Salvage",
             "thumbnail": "../Media/image.png",
-            "file": "reverse2048.json"
+            "file": "WitchesBrew.json"
         },
                 {
             "title": "The Witch's Brew",
             "thumbnail": "../Media/image.png",
-            "file": "reverse2048.json"
+            "file": "WitchesBrew.json"
         }
     ],
 
@@ -21,45 +21,45 @@
         {
             "title": "The Grid",
             "thumbnail": "../Media/image.png",
-            "file": "reverse2048.json"
+            "file": "BoardgameExample.json"
         },
                 {
             "title": "Prison Break",
             "thumbnail": "../Media/image.png",
-            "file": "reverse2048.json"
+            "file": "BoardgameExample.json"
         },
                 {
             "title": "Linchpin",
             "thumbnail": "../Media/image.png",
-            "file": "reverse2048.json"
+            "file": "BoardgameExample.json"
         },
                 {
             "title": "Alice in Wonderland",
             "thumbnail": "../Media/image.png",
-            "file": "reverse2048.json"
+            "file": "BoardgameExample.json"
         },
                 {
             "title": "Hush house",
             "thumbnail": "../Media/image.png",
-            "file": "reverse2048.json"
+            "file": "BoardgameExample.json"
         }
     ],
 
-    "blogs": [
+    "Blogs": [
         {
             "title": "Spirit Farer",
             "thumbnail": "../Media/image.png",
-            "file": "reverse2048.json"
+            "file": "BlogExample.json"
         },
                 {
             "title": "Don't Starve",
             "thumbnail": "../Media/image.png",
-            "file": "reverse2048.json"
+            "file": "BlogExample.json"
         },
                         {
             "title": "Until Dawn",
             "thumbnail": "../Media/image.png",
-            "file": "reverse2048.json"
+            "file": "BlogExample.json"
         }
     ]
 }

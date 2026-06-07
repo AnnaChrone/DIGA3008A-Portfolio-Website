@@ -4,12 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/style.css">
+    <script src="../JS/GameBlogTemplate.js" defer></script>
     <script src="../JS/PersistentElements.js" defer></script>
     <title>JC - GameBlog</title>
 </head>
 <body id="indiv-gameblog-page-body" class="theme-green-light">
         <nav id="persistent-nav"></nav>
-        <h1>GameBlog Templates</h1>
+
+   <main id="blog-page">
+
+        <a href="Games.html">
+            ← Back to Games
+        </a>
+
+        <header>
+
+            <h1 id="blog-title"></h1>
+
+            <p>
+                Date Published:
+                <span id="publish-date"></span>
+            </p>
+
+        </header>
+
+        <img
+            id="hero-image"
+            class="hero-image">
+
+        <section>
+
+            <h2>Background on Game</h2>
+
+            <p id="background-text"></p>
+
+        </section>
+
+        <section id="blog-content">
+
+            <!-- JS fills this -->
+
+        </section>
+
+        <section>
+
+            <h2>Play Game</h2>
+
+            <a
+                id="game-link"
+                target="_blank">
+                Game Link
+            </a>
+
+        </section>
+
+    </main>
+
         <section id="contact-me"></section>
 </body>
 </html>

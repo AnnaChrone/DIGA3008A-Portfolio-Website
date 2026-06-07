@@ -4,12 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/style.css">
+    <script src="../JS/BoardgameTemplate.js" defer></script>
     <script src="../JS/PersistentElements.js" defer></script>
     <title>JC - BoardGame</title>
 </head>
 <body id="indiv-boardgame-page-body" class="theme-green-light">
-        <nav id="persistent-nav"></nav>
-        <h1>Boardgame template</h1>
-        <section id="contact-me"></section>
+
+    <nav id="persistent-nav"></nav>
+    <main id="boardgame-page">
+
+        <a href="Games.html">← Back to Games</a>
+
+        <header>
+            <h1 id="game-title"></h1>
+
+            <p id="game-meta"></p>
+        </header>
+
+        <section>
+            <h2>Game Overview</h2>
+
+            <p id="overview-text"></p>
+
+            <img
+                id="overview-image"
+                class="hero-image"
+            >
+        </section>
+
+        <section>
+            <h2>My Contribution</h2>
+
+            <p id="contribution-text"></p>
+
+            <div
+                id="contribution-images"
+                class="image-pair">
+            </div>
+        </section>
+
+        <section>
+            <h2>Process</h2>
+
+            <p id="process-text"></p>
+
+            <div
+                id="process-images"
+                class="image-pair">
+            </div>
+        </section>
+
+        <section>
+            <h2>Group Members</h2>
+
+            <ul id="group-members"></ul>
+        </section>
+
+        <section>
+            <h2 id="play-title"></h2>
+
+            <a
+                id="rules-link"
+                target="_blank">
+                Rules
+            </a>
+
+            <a
+                id="reflection-link"
+                target="_blank">
+                Reflection
+            </a>
+        </section>
+
+    </main>
+
+    <section id="contact-me"></section>
+
 </body>
 </html>

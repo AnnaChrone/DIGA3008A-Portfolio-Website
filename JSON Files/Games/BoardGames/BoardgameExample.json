@@ -1,0 +1,38 @@
+{
+    "title": "Chess Variant",
+
+    "year": "2025",
+    "duration": "2 Months",
+    "projectYear": "2nd Year",
+
+    "themes": [
+        "Strategy",
+        "Competitive",
+        "Physical"
+    ],
+
+    "overview": "...",
+    "overviewImage": "...",
+
+    "contribution": "...",
+    "contributionImages": [
+        "...",
+        "..."
+    ],
+
+    "process": "...",
+    "processImages": [
+        "...",
+        "..."
+    ],
+
+    "members": [
+        {
+            "name": "John",
+            "role": "Design"
+        }
+    ],
+
+    "rulesFile": "...",
+    "reflectionFile": "..."
+}

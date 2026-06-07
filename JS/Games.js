@@ -17,21 +17,24 @@ async function loadGames()
             "video-games",
             "video-left",
             "video-right",
-            data.videoGames
+            data.videoGames,
+            "VideoGameTemplate.html"
         );
 
         createCarousel(
             "board-games",
             "board-left",
             "board-right",
-            data.boardGames
+            data.boardGames,
+            "BoardGameTemplate.html"
         );
 
         createCarousel(
             "blogs",
             "blog-left",
             "blog-right",
-            data.blogs
+            data.Blogs,
+            "GameBlogTemplate.html"
         );
     }
     catch(error)
@@ -44,7 +47,8 @@ function createCarousel(
     containerId,
     leftButtonId,
     rightButtonId,
-    items
+    items,
+    basePage
 )
 {
     carouselState[containerId] = 0;
@@ -55,7 +59,8 @@ function createCarousel(
     renderCarousel(
         items,
         container,
-        carouselState[containerId]
+        carouselState[containerId],
+        basePage
     );
 
     document
@@ -94,7 +99,8 @@ function createCarousel(
 function renderCarousel(
     items,
     container,
-    startIndex
+    startIndex,
+    basePage
 )
 {
     container.innerHTML = "";
@@ -136,7 +142,7 @@ function renderCarousel(
         card.addEventListener("click", () =>
         {
             window.location.href =
-                `VideoGameTemplate.html?game=${item.file}`;
+                `${basePage}?game=${item.file}`;
         });
 
         container.appendChild(card);

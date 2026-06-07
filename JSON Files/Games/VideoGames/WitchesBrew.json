@@ -1,0 +1,45 @@
+{
+    "title": "Witches Brew",
+
+    "year": "2025",
+    "duration": "3 Months",
+    "projectYear": "3rd Year",
+
+    "themes": [
+        "Puzzle",
+        "AI",
+        "C++"
+    ],
+
+    "overview": "...",
+    "overviewImage": "...",
+
+    "contribution": "...",
+    "contributionImages": [
+        "...",
+        "..."
+    ],
+
+    "process": "...",
+    "processImages": [
+        "...",
+        "..."
+    ],
+
+    "software": [
+        "Unity",
+        "Github",
+        "Blender"
+    ],
+
+    "members": [
+        {
+            "name": "John",
+            "role": "Programming"
+        }
+    ],
+
+    "githubLink": "...",
+    "projectLink": "...",
+    "reflectionFile": "..."
+}
