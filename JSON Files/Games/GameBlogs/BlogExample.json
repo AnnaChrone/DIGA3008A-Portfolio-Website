@@ -1,11 +1,11 @@
 {
-    "gameTitle": "Wahwahahah",
+    "gameTitle": "Game Blog example",
 
     "blogTitle": "Designing the AI",
 
     "publishDate": "2025-06-01",
 
-    "heroImage": "...",
+    "heroImage": "../../Media/image.png",
 
     "background": "...",
 
@@ -16,7 +16,7 @@
             "content": [
                 {
                     "type": "paragraph",
-                    "text": "..."
+                    "text": "blah blah blah these are the design goals"
                 },
 
                 {

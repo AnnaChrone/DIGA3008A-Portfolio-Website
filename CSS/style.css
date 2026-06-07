@@ -114,6 +114,7 @@ h2 {
 h3 {
         font-family: var(--font-header);
         color: var(--text-body);
+        font-size: 1rem;
         padding-bottom: 1rem;
 
 }
@@ -196,6 +197,7 @@ ul {
     position: relative;
     text-align: center;
     padding-top: 1rem;
+
 }
 
 #contact-me h2 {
@@ -387,10 +389,8 @@ ul {
 /* GAMES PAGE*/
 #games-page-body {
     background-color: var(--bg-primary);
-
     display: grid;
-    grid-template-rows: auto auto 1fr auto;;
-
+    grid-template-rows: auto auto 1fr auto;
     grid-template-areas:
         "nav"
         "header"
@@ -398,13 +398,28 @@ ul {
         "contact";
 
 }
+
 #Games {
     grid-area: content;
 }
 
 #games-page-body h1 {
-    grid-area: header;
+        padding-top: 2rem;
 }
+
+#games-page-body h1,
+#games-page-body h2 {
+    
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    padding-left: 2rem;
+}
+
+.game-section {
+    margin-bottom: 2rem;
+}
+
 .carousel-games
 {
     display: flex;
@@ -422,7 +437,6 @@ ul {
 .game-card
 {
     width: 20rem;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -444,16 +458,284 @@ ul {
     text-align: center;
 }
 
+#Games button {
+    border: 0;
+    font-size: 1rem;
+    transform: translateY(-40%);
+    width: 2rem;
+    height: 3rem;
+    background: rgba(0,0,0,0.2);
+    color: rgb(0, 0, 0);
+    border-radius: 40%;
+    backdrop-filter: blur(4px);
+}
 
+#back-to-games {
+    grid-area: return;
+    padding: 1rem;
+}
 
 /*INDIVIDUAL BOARDGAME PAGE*/
+
+#indiv-boardgame-page-body {
+    background-color: var(--bg-secondary);
+   /* min-height: 100vh;*/
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-areas:
+        "nav"
+        "return"
+        "content"
+        "contact";
+}
+
+#indiv-boardgame-page-body #contact-me {
+    grid-area: contact;
+    background-color: var(--bg-primary);
+}
+
+#boardgame-page {
+    grid-area: content;
+    padding-left: 2rem;
+}
+
+#boardgame-page header {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+#game-title {
+    padding-bottom: 0.1rem;
+}
+
+#game-meta {
+    font-style: bold;
+    margin: 0;
+    padding: 0;
+    
+}
+
+#project-container {
+    grid-area: content;
+    max-width: 1920px;
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 4rem;
+}
+
+
+#boardgame-page p {
+    margin-bottom: 2rem;
+}
+
+
+#boardgame-page .hero-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-self: center;
+    width: 100%;
+    max-width: 40rem;
+    margin-bottom: 2rem;
+}
+
+.hero-image img {
+    width: 1rem;
+    height: auto;
+    border-radius: 0.5rem;
+}
+
+#play-title {
+    display: flex;
+        justify-content: center;
+        margin: 0;
+}
+
+#download-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+    width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+
+.image-pair {
+    display: grid;
+    align-items: center;
+    text-align: center;
+    justify-self: center;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    gap: 1rem;
+    width: 100%;
+    max-width: 50rem;
+    margin-bottom: 2rem;
+}
+
+.image-pair img,
+.hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    object-fit:scale-down;
+}
+
+.download-icon {
+    width: 1.2rem;
+    height: 1.2rem;
+    flex-shrink: 0;
+}
+
+.download-link {
+    display: inline-flex; 
+    align-items: center;
+    gap: 0.6rem;
+    font-family: var(--font-body);
+    text-decoration: none;
+
+    padding: 0.8rem 1.2rem;
+    border-radius: 0.5rem;
+
+    background-color: var(--bg-secondary);
+    color: var(--text-heading);
+
+    transition: transform 0.2s ease;
+}
+
+.download-link:hover {
+    transform: translateY(-2px);
+}
 
 
 /*INDIVIDUAL VIDEOGAME PAGE*/
 
 
 /*INDIVIDUAL GAMEBLOG PAGE*/
+#indiv-gameblog-page-body {
+    background-color: var(--bg-secondary);
+   /* min-height: 100vh;*/
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
 
+    grid-template-areas:
+        "nav"
+        "return"
+        "content"
+        "contact";
+}
+
+#indiv-gameblog-page-body #contact-me {
+    grid-area: contact;
+    background-color: var(--bg-primary);
+}
+
+#blog-page {
+    grid-area: content;
+}
+
+#back-to-games {
+    grid-area: return;
+    padding: 1rem;
+}
+
+#project-container {
+    grid-area: content;
+    max-width: 1920px;
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 4rem;
+}
+
+.project-header {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.project-header p {
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.project-header h1 {
+        margin-bottom: 0;
+    padding: 0;
+}
+
+.project-text-block {
+    margin-bottom: 2rem;
+}
+
+#blog-page .hero-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-self: center;
+    width: 100%;
+    max-width: 40rem;
+    margin-bottom: 2rem;
+}
+
+#hero-image img {
+    width: 1rem;
+    height: auto;
+    border-radius: 0.5rem;
+}
+
+
+
+.project-image-group {
+    display: grid;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-self: center;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    gap: 1rem;
+    width: 100%;
+    max-width: 50rem;
+    margin-bottom: 2rem;
+}
+
+.project-image-group img,
+.project-image-block img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    object-fit:scale-down;
+}
+
+.download-icon {
+    width: 1.2rem;
+    height: 1.2rem;
+    flex-shrink: 0;
+}
+
+.download-link {
+    display: inline-flex; 
+    align-items: center;
+    gap: 0.6rem;
+    font-family: var(--font-body);
+    text-decoration: none;
+
+    padding: 0.8rem 1.2rem;
+    border-radius: 0.5rem;
+
+    background-color: var(--bg-secondary);
+    color: var(--text-heading);
+
+    transition: transform 0.2s ease;
+}
+
+.download-link:hover {
+    transform: translateY(-2px);
+}
 
 /* ENGINEERING PAGE */
 #engineering-page-body {
@@ -555,7 +837,7 @@ ul {
     background-color: var(--bg-primary);
 }
 
-#indiv-engineering-page-body a {
+#back-to-eng {
     grid-area: return;
     padding: 1rem;
 }
@@ -594,7 +876,7 @@ ul {
     text-align: center;
     justify-self: center;
     width: 100%;
-    max-width: 900px;
+    max-width: 40rem;
     margin-bottom: 2rem;
 }
 
@@ -627,7 +909,7 @@ ul {
     grid-auto-columns: 1fr;
     gap: 1rem;
     width: 100%;
-    max-width: 900px;
+    max-width: 50rem;
     margin-bottom: 2rem;
 }
 

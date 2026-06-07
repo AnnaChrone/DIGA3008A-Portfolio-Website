@@ -37,13 +37,13 @@ function renderBoardGame(game)
     document.getElementById("game-meta")
         .innerHTML =
         `
-            ${game.year}
+            <strong>${game.year}
             (${game.duration})
             |
             ${game.projectYear} Project
             <br>
             Theme:
-            ${game.themes.join(" | ")}
+            ${game.themes.join(" | ")}</strong>
         `;
 
     document.getElementById("overview-text")

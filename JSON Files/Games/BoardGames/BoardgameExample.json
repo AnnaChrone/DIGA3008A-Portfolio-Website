@@ -12,18 +12,18 @@
     ],
 
     "overview": "...",
-    "overviewImage": "...",
+    "overviewImage": "../../Media/image.png",
 
     "contribution": "...",
     "contributionImages": [
-        "...",
-        "..."
+        "../../Media/image.png",
+        "../../Media/image.png"
     ],
 
     "process": "...",
     "processImages": [
-        "...",
-        "..."
+        "../../Media/image.png",
+        "../../Media/image.png"
     ],
 
     "members": [
