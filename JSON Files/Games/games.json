@@ -47,9 +47,9 @@
 
     "Blogs": [
         {
-            "title": "Spirit Farer",
+            "title": "Spiritfarer",
             "thumbnail": "../Media/image.png",
-            "file": "BlogExample.json"
+            "file": "Spiritfarer.json"
         },
                 {
             "title": "Don't Starve",

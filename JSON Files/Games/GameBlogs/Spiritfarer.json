@@ -1,0 +1,75 @@
+{
+    "gameTitle": "Spiritfarer",
+
+    "blogTitle": "The art of letting go",
+
+    "publishDate": "13 May 2026",
+
+    "heroImage": "../../Media/image.png",
+
+
+    "sections": [
+        {
+            "heading": "",
+
+            "content": [
+                {
+                    "type": "paragraph",
+                    "text": "“Spiritfarer” is a platformer-style adventure game. In the game, you play as Stella, who is a spiritfarer, responsible for gathering deceased souls and ferrying them to the Everdoor: “The alpha where everything starts, and the omega where everything ends”. Once a soul crosses the Everdoor, e􀆯ectively the gateway into the Afterlife, they depart the mortal world for good. You have to build your ferry to best accommodate the souls on their journey to the Everdoor, before eventually releasing them, where you will never have a chance to see them again. This analysis adopts a ludoliterate approach (Zagal, 2010), focusing on how game systems, mechanics, and player interaction construct emotional meaning beyond the use of narrative alone."
+                },
+
+                {
+                    "type": "imagePair",
+                    "images": [
+                        "../../Media/image.png",
+                        "../../Media/image.png"
+                    ]
+                },
+
+                {
+                    "type": "paragraph",
+                    "text": "“Spiritfarer” plays on the deeply emotional theme of death, a topic many people are uncomfortable confronting directly. But rather than presenting grief solely through dialogue and narrative, it embeds these themes of loss and acceptance directly into its gameplay systems and overall aesthetic design."
+                },
+                {
+                    "type": "paragraph",
+                    "text":"At the very start of the game, the player is introduced to their new role as Spiritfarer, taking over from Charon. This opening sequence immediately establishes the game’s calm and reflective tone, with gentle orchestral music accompanying Stella as she quietly drifts her boat behind Charon, while cherry blossoms fall around them. The game’s hand-drawn art style and warm colour palette soften the concept of death, presenting it not as horror, but rather as a quiet melancholy. Combined with slow boat traversal and subdued musical themes, the game creates an atmosphere of calm acceptance rather than fear. From the outset, the player is taught the central reality of their role: “dying souls can’t pass away on their own”. The key aspect of the game is thus the act of letting go. Once you have completed all quests for a soul, it is time to say goodbye and take them to the Everdoor. No matter what you do in the game, once you complete the quests, it will eventually lead to you needing to take a soul to the Everdoor and letting them go."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "“Spiritfarer” intentionally restricts any player agency regarding the fate of the souls aboard the ferry. Although many players, including myself, may attempt to temporarily delay the inevitable by not immediately taking spirits to the Everdoor, the progression systems built into the game make their departure unavoidable and inevitable. From a systems perspective, progression in “Spiritfarer” is structurally dependent on loss. Advancement is not separated from emotional consequence, but is built directly upon it. This creates a meaningful tension between emotional reluctance and mechanical necessity, reinforcing the game’s central message that grief may be postponed, but can never be escaped entirely. This emotional reluctance to let a character go comes from the bond the game builds up between player and character. Whilst the end goal for all the spirits is to lead them through the Everdoor, the game delays this emotional closure through repetitive caregiving mechanics, which build connection."
+                },
+                                {
+                    "type": "paragraph",
+                    "text": "By making the player cook specific meals to the likings of each soul, upgrade homes, and fulfil personal requests before each farewell, the game transforms attachment into a labour of love. This design causes the player to internalise routine and dependence, making the eventual departure feel like a disruption of established systems, rather than simply a scripted emotional beat. The mechanic reinforces the game’s broader theme that letting go is difficult precisely because relationships become embedded within everyday rituals. This also ensures adequate pacing between each soul’s departure, causing you to become emotionally attached to each spirit with their unique quirks and requests, like their favourite foods. The game uses routine interaction loops to simulate emotional domestication, making departure mechanically disruptive. For example, after I took the first spirit, Gwen, through the Everdoor, I found myself needing to pause the game for several days while I processed what felt like real grief. This reaction was not produced through narrative alone. By the time Gwen leaves, I had already spent hours cooking for her, building her house, completing errands, and repeatedly interacting with her aboard the ship."
+                },
+                                {
+                    "type": "paragraph",
+                    "text": "Adding to the connection I felt, was that Gwen was Stella’s best friend. Something the player only discovers through carefully digesting the dialogue of each spirit Stella picks up is that Stella personally knew every one of them while they were alive. This discovery reframes the player’s journey across the entire game. While the player initially experiences each spirit as a new character to learn about, Stella herself is revisiting past relationships, old memories, and unresolved grief from her own past. This creates a dual perspective aspect, in which the player forms attachments for the first time, while Stella experiences the pain of remembering and thus eventually losing these individuals once again. By slowly revealing these personal connections through dialogue lines, “Spiritfarer” reinforces its themes of memory, acceptance, and emotional reconciliation. The player’s growing attachment to each spirit therefore mirrors Stella’s own process of acknowledging the people who shaped her life, before ultimately learning to let them go and be at peace with it."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "“Spiritfarer” intentionally transforms emotional attachment into routine gameplay systems, causing the player to internalise companionship through repetition, rather than through cutscenes alone. As a result, the farewell feels mechanically disruptive, not simply narratively sad. Saying goodbye to key characters however, is not something that can be avoided, no matter how attached to them the player has become. This is because the gameplay loop uniquely intertwines reward and loss, which is a design I have not seen before. Caring for spirits rewards the player not only with emotional connection, but with narrative progression. Completing the tasks Stella’s spirit friends request as part of their own process of letting go of their mortal lives, unlocks blueprints to erect essential buildings on the ferry that are significant to each soul’s life, such as the workshop of Stella’s deceased uncle, Atul."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Gathering spirit flowers also unlocks crucial upgrades, which are required to unlock key progressions in the game, such as crossing the ice barrier that restricts access to a large portion of the map. However, these flowers bloom on a spirit’s bed only after they have departed through the Everdoor. Obtaining rewards therefore requires the permanent loss of the very characters the player has grown attached to through hours of caregiving and interaction. Reward comes only after the player has experienced the grief attached to this loss. The game transforms progression itself into a continuous act of letting go, mechanically reinforcing its central theme that emotional growth and personal progression often require acceptance of inevitable loss."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Once the characters are ready to face the Everdoor, this is not just communicated through dialogue, but the player must actually take them there. It is this mechanical depiction of the theme of accepting death and letting go that drives the underlying moral of the story. Rather than treating death as a purely narrative theme, “Spiritfarer” embeds grief and acceptance directly into its mechanics, progression systems, and caregiving routines, by forcing the player to actively participate in the process of letting go."
+                },                {
+                    "type": "paragraph",
+                    "text": "“Spiritfarer” shows how grief within games can be communicated not just through narrative, but through interaction with the game world. By fusing progression systems, caregiving tasks, and the unavoidable departure of souls through the Everdoor, the game translates loss into an active process the player is forced to constantly participate in. The inability to progress without saying goodbye to souls allows mechanics to beautifully reinforce the emotional themes of grief and loss. Rather than just telling a story about grief and loss, “Spiritfarer” forces the player to come to terms with and confront the emotional di􀆯iculty of saying goodbye, through the act of play."
+                }                
+            ]
+        }
+    ],
+
+         "gameLinks": [
+    {
+      "label": "ThunderLotus, Spiritfarer",
+      "url": "https://thunderlotusgames.com/games/spiritfarer/",
+      "type": "external"
+    }
+  ]
+}

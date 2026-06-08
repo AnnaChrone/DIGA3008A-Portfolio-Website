@@ -42,9 +42,6 @@ function renderBlog(blog)
         .src =
         blog.heroImage;
 
-    document.getElementById("background-text")
-        .textContent =
-        blog.background;
 
     renderBlogSections(blog.sections);
 
