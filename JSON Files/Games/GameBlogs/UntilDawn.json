@@ -1,0 +1,69 @@
+{
+    "gameTitle": "Until Dawn",
+
+    "blogTitle": "The Butterfly Effect",
+
+    "publishDate": "13 May 2026",
+
+    "heroImage": "../../Media/image.png",
+
+    "sections": [
+        {
+            "heading": "",
+
+            "content": [
+                                {
+                    "type": "imagePair",
+                    "images": [
+                        "../../Media/image.png",
+                        "../../Media/image.png"
+                    ]
+                },
+                {
+                    "type": "paragraph",
+                    "text": "“Until Dawn” is an interactive horror game that puts players in control of a group of teenagers stranded in a remote mountain lodge on the one-year anniversary of the disappearance of two of their friends. While the game presents itself as a traditional slasher horror experience, it has a key defining feature, which I have not seen used on quite this scale before. This feature is the “butterfly effect” mechanic, where player choices directly influence character relationships, narrative outcomes and who ultimately survives until dawn. Through this unique mechanic, “Until Dawn” transforms horror from a passive viewing experience into an interactive experience of the players’ understanding of consequence, morality and responsibility."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "“Until Dawn” can be categorised as a branching narrative survival horror game, but more specifically, it aligns with choice-driven interactive dramas (Zagal, 2010), where gameplay is primarily structured around decision points, rather than mastery of systemic skill. The core gameplay loop of “Until Dawn” is exploration, decision-making, and consequence interpretation. Players navigate environments from a third-person perspective, triggering dialogue, exploration sequences, and quick-time events. These inputs lead to various branching narrative outcomes, which are later explained by future events, meaning earlier decisions gain meaning with time. Unlike traditional survival horror games that emphasise resource management or combat proficiency, “Until Dawn” shifts the core interaction loop toward the narrative, where the player acts as a moral and decisive agent, rather than a character skilled in physical survival."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "The butterfly effect mechanic forces the player to make decisions in the moment that will greatly affect the outcome of the game, since these choices determine who will live and who will die. Once a choice is made, there is no going back, since decisions are auto-saved by the game. Whilst all decisions presented within the game alter the course of the game, not all decisions are of the butterfly effect variety. As detailed in the game’s Fandom Wiki, there are 22 official butterfly effect decisions in the game, each of which presents a unique narrative line. Some of these decisions allow the player time before deciding, whilst others require the player to respond with quick thinking before an automatic reset happens. Even when a butterfly effect moment is relatively small, it can still have drastic consequences later in the game. For example, in Butterfly Effect #2, “Rats with Bushy Tails”, if Chris decides to shoot the squirrel, a bird will attack Sam, which then leads to the consequence later in the game that when Sam stumbles through the door in the old hotel, she will reopen the wound she got from the bird attack, and thus a drop of her blood will give away her hiding position to the Psycho."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "In addition to this system, “Until Dawn” also introduces collectible totems, based on indigenous Native-American beliefs that prophecies come in the form of butterflies, hence the name of the butterfly effect mechanic. These totems provide players with fragmented visions of possible future events. There are 30 totems in total within the game, grouped into five different colours, with each colour having a different meaning. By looking through the butterfly cutout in the back of the totems, the player can see a glimpse of the possible future, thus giving them a brief insight into whether they wish to pursue or avoid an event. These visions foreshadow danger, survival, death, or guidance, yet they are all intentionally vague and often lack the context needed for players to fully understand them when they are viewed."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "An example of how the totems lack context for the player can be seen in one of the loss totems involving Jessica, specifically Loss Totem #2. This vision shows a fatally wounded Jessica falling down an elevator shaft, seemingly presenting an unavoidable future event. However, this prophecy only comes true if the player fails a specific sequence of quick-time events while controlling Mike during the chase scene earlier in the game. Because this totem provides no explanation of which actions influence the vision, players are left uncertain about how their decisions connect to the prophecy and how to ensure they don’t trigger it. This ambiguity reinforces the anxiety created by the butterfly effect system, as players begin to fear that even small mistakes, or choices made with no clear outcome, may unknowingly determine a character’s survival."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "One of the most effective aspects of the butterfly effect mechanic is the illusion of control itgives the player, when in actual fact, no matter what they do, someone will die. Although the game constantly reminds the player that their choices have an impact on the game, which is true, these choices are rarely framed in such a way as to clearly predict their outcome. Decisions are also often timed, emotionally pressured, or disconnected from their eventual consequences. As a result, players frequently feel personally responsible for negative outcomes, since it is their choices that lead to the event, even though they could not reasonably have predicted them. This transforms the horror experience from passive observation into active participation, as the player is no longer simply watching characters make mistakes, but instead becomes morally implicated in those mistakes themselves, through the characters."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "The design choices of “Until Dawn” work together to sustain tension through environmental uncertainty, and by controlling information needed to make decisions. The use of low-visibility environments, restricted exploration spaces within the mountain lodge, and cinematic camera framing limits player awareness and reinforces the sense of vulnerability, especially when the player knows there is an antagonist on the loose. Combined with minimalistic yet still-effective sound design, where silence and subtle audio cues signal danger, the game consistently keeps players in a state of anticipation and anxiety. These design elements ensure that tension is not only driven by the narrative events, but is directly embedded into how the player experiences the game as a whole."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "“Until Dawn” also weaponises a player’s attachment to certain characters, as the player plays in the position of all characters. While some characters are more likeable than others, this forced perspective ensures that the player gradually builds familiarity and emotional investment across the entire group, even toward characters they may initially distrust or dislike. As a result, the game removes the possibility of “safe detachment” typically found in other media like film or literature, where audiences can remain emotionally distant from certain characters, and thus remain unaffected when something bad happens to them. Instead, in “Until Dawn”, every character becomes partially “owned” by the player through control and decision-making, which intensifies the emotional impact of their potential deaths. When a character dies, it is no longer simply a narrative loss, but a direct consequence of the player’s actions, reinforcing guilt, responsibility, and decision anxiety. This transforms attachment into a design tool, where emotional investment is deliberately used to heighten the psychological weight of the butterfly effect system."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "“Until Dawn” uses the butterfly effect system, totems, and character control to turn the horror genre into a game about uncertainty, responsibility, and perceived agency. While players are given the sense that their choices meaningfully shape outcomes, the design carefully obscures cause and effect from each decision, ensuring that consequences often feel unpredictable and emotionally charged. This creates an illusion of control where players are constantly held accountable for outcomes they could not have fully anticipated, reinforcing the game’s central tension between choice, consequence, and inevitability."
+                }
+            ]
+        }
+    ],
+
+         "gameLinks": [
+    {
+      "label": "supermassivegames, Until Dawn",
+      "url": "https://www.supermassivegames.com/games/until-dawn",
+      "type": "external"
+    }
+  ]
+}
