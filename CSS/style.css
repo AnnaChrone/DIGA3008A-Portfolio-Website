@@ -525,7 +525,7 @@ ul {
 }
 
 
-#boardgame-page .hero-image {
+.hero-image {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -610,6 +610,109 @@ ul {
 
 /*INDIVIDUAL VIDEOGAME PAGE*/
 
+#indiv-videogame-page-body {
+    background-color: var(--bg-secondary);
+   /* min-height: 100vh;*/
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-areas:
+        "nav"
+        "return"
+        "content"
+        "contact";
+}
+
+#indiv-videogame-page-body #contact-me {
+    grid-area: contact;
+    background-color: var(--bg-primary);
+}
+
+#videogame-page {
+    grid-area: content;
+    max-width: 1920px;
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 4rem;
+
+}
+
+#videogame-page header {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+
+#videogame-page p {
+    margin-bottom: 2rem;
+}
+
+#videogame-page ul {
+        margin-bottom: 2rem;
+
+}
+
+#play-title {
+    display: flex;
+        justify-content: center;
+        margin: 0;
+}
+
+#download-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+    width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+#download-links a {
+    font-family: var(--font-body);
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 0.8rem 1.2rem;
+
+    color: var(--text-heading);
+
+    transition: transform 0.2s ease;
+}
+
+
+#download-links a:hover {
+    transform: translateY(-2px);
+}
+
+
+.image-pair {
+    display: grid;
+    align-items: center;
+    text-align: center;
+    justify-self: center;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    gap: 1rem;
+    width: 100%;
+    max-width: 50rem;
+    margin-bottom: 2rem;
+}
+
+.image-pair img,
+.hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    object-fit:scale-down;
+}
+
+.download-icon {
+    width: 1.2rem;
+    height: 1.2rem;
+    flex-shrink: 0;
+    transform: translateY(10%);
+}
+
 
 /*INDIVIDUAL GAMEBLOG PAGE*/
 #indiv-gameblog-page-body {
@@ -617,7 +720,6 @@ ul {
    /* min-height: 100vh;*/
     display: grid;
     grid-template-rows: auto auto 1fr auto;
-
     grid-template-areas:
         "nav"
         "return"
@@ -632,62 +734,63 @@ ul {
 
 #blog-page {
     grid-area: content;
-}
-
-#back-to-games {
-    grid-area: return;
-    padding: 1rem;
-}
-
-#project-container {
-    grid-area: content;
     max-width: 1920px;
     width: 100%;
     padding-left: 2rem;
     padding-right: 4rem;
+
 }
 
-.project-header {
+#blog-title {
+    padding: 0;
+}
+
+#blog-page header {
     margin-top: 1rem;
     margin-bottom: 2rem;
 }
 
-.project-header p {
-    margin-bottom: 0;
-    padding: 0;
-}
 
-.project-header h1 {
-        margin-bottom: 0;
-    padding: 0;
-}
-
-.project-text-block {
+#blog-page p {
     margin-bottom: 2rem;
 }
 
-#blog-page .hero-image {
+#blog-page ul {
+        margin-bottom: 2rem;
+
+}
+
+
+#download-links {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    text-align: center;
-    justify-self: center;
+    justify-content: center;
+    gap: 10rem;
     width: 100%;
-    max-width: 40rem;
-    margin-bottom: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
-#hero-image img {
-    width: 1rem;
-    height: auto;
-    border-radius: 0.5rem;
+#download-links a {
+    font-family: var(--font-body);
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 0.8rem 1.2rem;
+
+    color: var(--text-heading);
+
+    transition: transform 0.2s ease;
 }
 
 
+#download-links a:hover {
+    transform: translateY(-2px);
+}
 
-.project-image-group {
+
+.blog-image-pair {
     display: grid;
-    display: flex;
     align-items: center;
     text-align: center;
     justify-self: center;
@@ -699,8 +802,7 @@ ul {
     margin-bottom: 2rem;
 }
 
-.project-image-group img,
-.project-image-block img {
+.blog-image-pair img{
     width: 100%;
     height: auto;
     border-radius: 0.5rem;
@@ -711,27 +813,9 @@ ul {
     width: 1.2rem;
     height: 1.2rem;
     flex-shrink: 0;
+    transform: translateY(10%);
 }
 
-.download-link {
-    display: inline-flex; 
-    align-items: center;
-    gap: 0.6rem;
-    font-family: var(--font-body);
-    text-decoration: none;
-
-    padding: 0.8rem 1.2rem;
-    border-radius: 0.5rem;
-
-    background-color: var(--bg-secondary);
-    color: var(--text-heading);
-
-    transition: transform 0.2s ease;
-}
-
-.download-link:hover {
-    transform: translateY(-2px);
-}
 
 /* ENGINEERING PAGE */
 #engineering-page-body {

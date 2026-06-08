@@ -49,57 +49,60 @@ function renderBlog(blog)
     renderBlogSections(blog.sections);
 
     const linksContainer =
-    document.getElementById("download-links");
+        document.getElementById("download-links");
 
-linksContainer.innerHTML = "";
+    linksContainer.innerHTML = "";
 
-game.gameLinks.forEach(link =>
-{
-    const a =
-        document.createElement("a");
-
-    a.href =
-        link.url;
-
-    a.classList.add("gameLink");
-
-    if(link.type === "external")
+    if (blog.gameLinks)
     {
-        a.target = "_blank";
-        a.rel = "noopener noreferrer";
-    }
+        blog.gameLinks.forEach(link =>
+        {
+            const a =
+                document.createElement("a");
 
-    if(link.type === "download")
-    {
-        a.setAttribute("download", "");
+            a.href =
+                link.url;
 
-        a.innerHTML = `
-            <svg class="download-icon" viewBox="0 0 24 24" fill="none">
-                <path d="M12 3v10m0 0l4-4m-4 4l-4-4"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"/>
-                <path d="M4 17v3h16v-3"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"/>
-            </svg>
-            ${link.label}
-        `;
-    }
-    else
-    {
-        a.textContent =
-            link.label;
-    }
+            a.classList.add("gameLink");
 
-    linksContainer.appendChild(a);
-});
+            if(link.type === "external")
+            {
+                a.target = "_blank";
+                a.rel = "noopener noreferrer";
+            }
+
+            if(link.type === "download")
+            {
+                a.setAttribute("download", "");
+
+                a.innerHTML = `
+                    <svg class="download-icon" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 3v10m0 0l4-4m-4 4l-4-4"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"/>
+                        <path d="M4 17v3h16v-3"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"/>
+                    </svg>
+                    ${link.label}
+                `;
+            }
+            else
+            {
+                a.textContent =
+                    link.label;
+            }
+
+            linksContainer.appendChild(a);
+        });
+    }
 
     document.getElementById("play-title")
         .textContent =
-        game.title;
+        `Play ${blog.gameTitle}`;
 }
 
 

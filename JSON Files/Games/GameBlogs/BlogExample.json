@@ -11,7 +11,7 @@
 
     "sections": [
         {
-            "heading": "Game title",
+            "heading": "This is the game",
 
             "content": [
                 {
@@ -22,8 +22,8 @@
                 {
                     "type": "imagePair",
                     "images": [
-                        "...",
-                        "..."
+                        "../../Media/image.png",
+                        "../../Media/image.png"
                     ]
                 },
 
