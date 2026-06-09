@@ -1,0 +1,60 @@
+{
+    "title": "Alice In Wonderland",
+
+    "year": "2024",
+    "duration": "1 month",
+    "projectYear": "1st Year",
+
+    "themes": [
+        "Strategy",
+        "Team",
+        "Hidden roles"
+    ],
+
+    "overview": "<p>In this boardgame based on the movie, Alice finds herself returning to the magical world of wonder she created in her dreams. She reunites with her friends and learns what her destiny can be found through quests. </p><p>Alice finds herself falling down the rabbit hole from the real world into a familiar chaos, where she must find out who she can trust, and which side she should choose. </p><p>Players need to complete quests with their team and ‘create’ their weapon to defeat the opposing team. </p><p>This game consists of two acts, each with different objectives.</p>",
+    "overviewImage": "../../Media/image.png",
+
+    "contribution": "<p>The group worked together as a whole to develop the game.</p>",
+    "contributionImages": [
+        "../../Media/image.png",
+        "../../Media/image.png"
+    ],
+
+    "process": "<p>The game combines hidden roles, team-based objectives, quest completion, resource management, combat mechanics, and area control across a two-act structure. </p><p>In the first act, players explore the game board, uncover character tokens, and compete to recruit Alice to either the Red or White team, while Alice initially acts independently to disrupt both sides. </p><p>Once Alice is found, the game transitions into a second act focused on completing quests, collecting resources from location-based banks, and capturing weapon tokens to achieve victory. </p><p>The design incorporates asymmetric character roles, inventory-based quest systems, teleportation mechanics through rabbit holes, combat and power card interactions, and multiple victory conditions that encourage cooperation, strategic planning, and player conflict.</p>",
+    "processImages": [
+        "../../Media/image.png",
+        "../../Media/image.png"
+    ],
+
+    "members": [
+        {
+            "name": "Tameeah Padayachy",
+            "role": "member"
+        },
+                {
+            "name": "Darryn Minnaar",
+            "role": "member"
+        },
+                {
+            "name": "Katlego Mashego",
+            "role": "member"
+        },
+                {
+            "name": "Lindiwe Makiri",
+            "role": "member"
+        },
+                {
+            "name": "Jenaed Roman",
+            "role": "member"
+        }
+    ],
+
+     "gameLinks": [
+
+    {
+      "label": "Download Ruleset",
+      "url": "../files/ruleset.zip",
+      "type": "download"
+    }
+  ]
+}

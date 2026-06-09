@@ -1,0 +1,52 @@
+{
+    "title": "The Grid",
+
+    "year": "2024",
+    "duration": "3 Months",
+    "projectYear": "1st Year",
+
+    "themes": [
+        "Strategy",
+        "Two Player",
+        "Abstract"
+    ],
+
+    "overview": "“The Grid” is an intense two-player strategy board game, where players race to be first to get their pieces into the home base using teleports, blocking tactics and pure logic. ",
+    "overviewImage": "../../Media/image.png",
+
+    "contribution": "The full game was developed together as a group, and I wrote the ruleset.",
+    "contributionImages": [
+        "../../Media/image.png",
+        "../../Media/image.png"
+    ],
+
+    "process": "Through repeated playtests, the design evolved from a simple race-to-the-end concept into a more complex system incorporating different wall zones and restrictions, bonus blocks, and teleporting squares, which significantly increased strategic depth. A key design decision was changing the win condition from getting all six pieces home, to allowing one piece to remain as a dedicated defender, creating more meaningful endgames and reducing repetitive “last piece” races. The playtesting process highlighted the game’s main strength: multiple viable strategies with no dominant approach.It also highlighted a notable weakness: players could exploit a teleport-plus-bonus-block loop to advance pieces repeatedly along the same route, creating shallower gameplay.",
+    "processImages": [
+        "../../Media/image.png",
+        "../../Media/image.png"
+    ],
+
+    "members": [
+        {
+            "name": "Stephanos Loizos",
+            "role": "member"
+        },        {
+            "name": "Karabo Mpati",
+            "role": "member"
+        },        {
+            "name": "Ramulayo Neluvhalani",
+            "role": "member"
+        },        {
+            "name": "Boitumelo Olifant",
+            "role": "member"
+        }
+    ],
+
+     "gameLinks": [
+    {
+      "label": "Download Ruleset",
+      "url": "../files/ruleset.zip",
+      "type": "download"
+    }
+  ]
+}

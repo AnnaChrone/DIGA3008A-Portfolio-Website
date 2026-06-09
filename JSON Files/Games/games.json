@@ -21,27 +21,27 @@
         {
             "title": "The Grid",
             "thumbnail": "../Media/image.png",
-            "file": "BoardgameExample.json"
+            "file": "TheGrid.json"
         },
                 {
             "title": "Prison Break",
             "thumbnail": "../Media/image.png",
-            "file": "BoardgameExample.json"
+            "file": "PrisonBreak.json"
         },
                 {
             "title": "Linchpin",
             "thumbnail": "../Media/image.png",
-            "file": "BoardgameExample.json"
+            "file": "LinchPin.json"
         },
                 {
             "title": "Alice in Wonderland",
             "thumbnail": "../Media/image.png",
-            "file": "BoardgameExample.json"
+            "file": "AliceInWonderland.json"
         },
                 {
             "title": "Hush house",
             "thumbnail": "../Media/image.png",
-            "file": "BoardgameExample.json"
+            "file": "HushHouse.json"
         }
     ],
 

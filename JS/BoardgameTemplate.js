@@ -2,165 +2,195 @@ document.addEventListener("DOMContentLoaded", loadBoardGame);
 
 async function loadBoardGame()
 {
-    const params =
-        new URLSearchParams(window.location.search);
+    const params = new URLSearchParams(window.location.search);
+    const gameFile = params.get("game");
 
-    const gameFile =
-        params.get("game");
-
-    if(!gameFile) return;
+    if (!gameFile)
+    {
+        console.warn("No game file provided in URL.");
+        return;
+    }
 
     try
     {
-        const response =
-            await fetch(
-                `../JSON Files/Games/BoardGames/${gameFile}`
-            );
+        const response = await fetch(
+            `../JSON Files/Games/BoardGames/${gameFile}`
+        );
 
-        const game =
-            await response.json();
+        if (!response.ok)
+        {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
 
+        const game = await response.json();
         renderBoardGame(game);
     }
-    catch(error)
+    catch (error)
     {
-        console.error(error);
+        console.error("Load error:", error);
     }
 }
+
+/* =========================
+   SAFE HELPERS
+========================= */
+
+function setText(id, value, allowHTML = false)
+{
+    const el = document.getElementById(id);
+    if (!el) return;
+
+    if (allowHTML)
+        el.innerHTML = value || "";
+    else
+        el.textContent = value || "";
+}
+
+function setImage(id, src)
+{
+    const el = document.getElementById(id);
+    if (!el) return;
+    el.src = src || "";
+}
+
+/* =========================
+   MAIN RENDER
+========================= */
 
 function renderBoardGame(game)
 {
-    document.getElementById("game-title")
-        .textContent =
-        game.title;
+    if (!game) return;
 
-    document.getElementById("game-meta")
-        .innerHTML =
+    // TITLE
+    setText("game-title", game.title);
+
+    // META
+    setText(
+        "game-meta",
         `
-            <strong>${game.year}
-            (${game.duration})
-            |
-            ${game.projectYear} Project
+        <strong>
+            ${game.year || ""}
+            (${game.duration || ""})
+            | ${game.projectYear || ""} Project
             <br>
-            Theme:
-            ${game.themes.join(" | ")}</strong>
-        `;
-
-    document.getElementById("overview-text")
-        .textContent =
-        game.overview;
-
-    document.getElementById("overview-image")
-        .src =
-        game.overviewImage;
-
-    document.getElementById("contribution-text")
-        .textContent =
-        game.contribution;
-
-    renderImagePair(
-        game.contributionImages,
-        "contribution-images"
+            Theme: ${(game.themes || []).join(" | ")}
+        </strong>
+        `,
+        true
     );
 
-    document.getElementById("process-text")
-        .textContent =
-        game.process;
+    // OVERVIEW (HTML allowed)
+    setText("overview-text", game.overview, true);
+    setImage("overview-image", game.overviewImage);
 
-    renderImagePair(
-        game.processImages,
-        "process-images"
-    );
+    // CONTRIBUTION
+    setText("contribution-text", game.contribution, true);
+    renderImageGroup(game.contributionImages, "contribution-images");
 
+    // PROCESS
+    setText("process-text", game.process, true);
+    renderImageGroup(game.processImages, "process-images");
+
+    // MEMBERS
     renderMembers(game.members);
 
-const linksContainer =
-    document.getElementById("download-links");
+    // LINKS
+    renderLinks(game.gameLinks);
 
-linksContainer.innerHTML = "";
-
-game.gameLinks.forEach(link =>
-{
-    const a =
-        document.createElement("a");
-
-    a.href =
-        link.url;
-
-    a.classList.add("gameLink");
-
-    if(link.type === "external")
-    {
-        a.target = "_blank";
-        a.rel = "noopener noreferrer";
-    }
-
-    if(link.type === "download")
-    {
-        a.setAttribute("download", "");
-
-        a.innerHTML = `
-            <svg class="download-icon" viewBox="0 0 24 24" fill="none">
-                <path d="M12 3v10m0 0l4-4m-4 4l-4-4"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"/>
-                <path d="M4 17v3h16v-3"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"/>
-            </svg>
-            ${link.label}
-        `;
-    }
-    else
-    {
-        a.textContent =
-            link.label;
-    }
-
-    linksContainer.appendChild(a);
-});
-
-    document.getElementById("play-title")
-        .textContent =
-        game.title;
+    // PLAY TITLE
+    setText("play-title", `Play ${game.title}`);
 }
 
-function renderImagePair(images, containerId)
+/* =========================
+   IMAGE GROUP RENDER
+   (1 → many images, flexible layout)
+========================= */
+
+function renderImageGroup(images, containerId)
 {
-    const container =
-        document.getElementById(containerId);
+    const container = document.getElementById(containerId);
+    if (!container) return;
 
     container.innerHTML = "";
 
-    images.forEach(image =>
+    if (!images || images.length === 0) return;
+
+    images.forEach(src =>
     {
-        const img =
-            document.createElement("img");
-
-        img.src = image;
-
+        const img = document.createElement("img");
+        img.src = src;
         container.appendChild(img);
     });
 }
 
+/* =========================
+   MEMBERS
+========================= */
+
 function renderMembers(members)
 {
-    const list =
-        document.getElementById("group-members");
+    const list = document.getElementById("group-members");
+    if (!list) return;
 
     list.innerHTML = "";
 
+    if (!members) return;
+
     members.forEach(member =>
     {
-        const li =
-            document.createElement("li");
-
-        li.textContent =
-            `${member.name} (${member.role})`;
-
+        const li = document.createElement("li");
+        li.textContent = `${member.name} (${member.role})`;
         list.appendChild(li);
+    });
+}
+
+
+function renderLinks(links)
+{
+    const container = document.getElementById("download-links");
+    if (!container) return;
+
+    container.innerHTML = "";
+
+    if (!links) return;
+
+    links.forEach(link =>
+    {
+        const a = document.createElement("a");
+
+        a.href = link.url || "#";
+        a.classList.add("gameLink");
+
+        if (link.type === "external")
+        {
+            a.target = "_blank";
+            a.rel = "noopener noreferrer";
+        }
+
+        if (link.type === "download")
+        {
+            a.setAttribute("download", "");
+
+            a.innerHTML = `
+                <svg class="download-icon" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 3v10m0 0l4-4m-4 4l-4-4"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"/>
+                    <path d="M4 17v3h16v-3"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"/>
+                </svg>
+                <span>${link.label || "Download"}</span>
+            `;
+        }
+        else
+        {
+            a.textContent = link.label || "Link";
+        }
+
+        container.appendChild(a);
     });
 }
