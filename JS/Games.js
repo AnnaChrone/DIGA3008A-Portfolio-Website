@@ -72,7 +72,8 @@ function createCarousel(
         renderCarousel(
             items,
             container,
-            carouselState[containerId]
+            carouselState[containerId],
+            basePage
         );
     });
 
@@ -91,7 +92,8 @@ function createCarousel(
         renderCarousel(
             items,
             container,
-            carouselState[containerId]
+            carouselState[containerId],
+            basePage
         );
     });
 }
@@ -120,7 +122,8 @@ function renderCarousel(
         const index =
             (startIndex + i) % items.length;
 
-        const item = items[index];
+        const item =
+            items[index];
 
         const card =
             document.createElement("article");

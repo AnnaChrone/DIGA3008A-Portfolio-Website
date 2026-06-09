@@ -5,7 +5,7 @@
 
     "publishDate": "13 May 2026",
 
-    "heroImage": "../../Media/image.png",
+    "heroImage": "../../Media/Games/GameBlogs/DontStarve/DontStarveTitleScreen.png",
 
     "sections": [
         {
@@ -21,7 +21,16 @@
                 },                {
                     "type": "paragraph",
                     "text": "In “Don’t Starve”, time is structured as a repeating day/dusk/night cycle that functions as a core game motivator of gameplay, instead of just providing world immersion. Each of these phases imposes a different incentive on the player: daytime is when it is safest and therefore the best time to explore and look for resources; dusk acts as a transitional period, or a warning that night time is approaching; and night introduces immediate danger through reduced visibility and increased vulnerability due to monsters lurking in the darkness."
-                },                {
+                },        
+                                {
+                    "type": "imagePair",
+                    "images": [
+                        "../../Media/Games/GameBlogs/DontStarve/HungerSanityHealth.png",
+                        "../../Media/Games/GameBlogs/DontStarve/DuskWarningMessage.png",
+                        "../../Media/Games/GameBlogs/DontStarve/MonsterWarningMessage.png"
+                    ]
+                },        
+                {
                     "type": "paragraph",
                     "text": "This escalated threat is especially noticeable during early playthroughs where players may suddenly realise they do not have enough grass or wood to craft a torch before the day’s end, often resulting in immediate death come nightfall. Therefore, time pressure is not produced through the use of a physical countdown, but rather the constant reminder that the safe period to explore and behave freely is finite and fleeting."
                 },                {
@@ -33,19 +42,34 @@
                 },                {
                     "type": "paragraph",
                     "text": "While the player begins to understand how the day/night cycle plays into their choices, the survival systems of the game also play a major part of the time pressure within “Don’t Starve”. Hunger is constantly depleting over time, forcing the player to be continually gathering food and planning ahead so as not to starve. Sanity functions similarly, decreasing when the player is exposed to darkness, causing sanity hallucinations, which is very common early game."
-                },                {
+                },                                   {
+                    "type": "imagePair",
+                    "images": [
+                        "../../Media/Games/GameBlogs/DontStarve/SanityHallucination.png"
+                    ]
+                },               {
                     "type": "paragraph",
                     "text": "This is how “Don’t Starve” ensures the day/night cycle remains anxiety inducing, as progressing in the game naturally pushes the player into situations where their hunger and sanity grow increasingly hard to manage. If players only collect resources during the day, they will grow dangerously hungry during the night. As a result, time pressure in the game is not just about surviving nightfall, but about constantly balancing multiple survival systems that worsen as time progresses, creating a layered sense of stress that the player gradually learns to manage as they learn to read the system through repeated play."
                 },                {
                     "type": "paragraph",
                     "text": "The choice to make the game world procedurally generated has a major impact on the player experience, as it removes the ability to memorise basic map layouts or rely on repeated world knowledge. Instead, players are forced to focus on learning general survival strategies, since every new run presents different resource locations, biomes, and close-by threats. A player may spawn close to useful food sources in one run, but dangerously far from key materials such as rocks or ‘beefalo’ in another. This shifts the game away from learning the map towards understanding the core systems within the gameplay loop, such as resource gathering, preparation for night, and adapting quickly to unfamiliar environments. As a result, each playthrough feels unpredictable, which increases tension and reinforces the game’s theme of uncertainty. At the same time, it supports longterm engagement, since failure does not feel repetitive, but instead becomes another opportunity to refine survival skills within a new situation."
-                },                {
+                },                                       {
+                    "type": "imagePair",
+                    "images": [
+                        "../../Media/Games/GameBlogs/DontStarve/Map.png"
+                    ]
+                },           {
                     "type": "paragraph",
                     "text": "Players who have genre literacy in survival games will naturally cope better with the time pressure implemented within “Don’t Starve”, as they already have the basic patterns required to survive. Experienced survival game players will often immediately begin gathering wood, food and other resources instead of aimlessly exploring, because they recognise the importance of preparing before the first night-cycle begins. Whilst they may not have zero cognitive load due to “Don’t Starve” having its own unique elements such as their specific crafting and resource collections, they will still have a far reduced player uncertainty than that of someone who is inexperienced within the genre. It is this theme of executing from muscle memory rather than thinking what to do."
                 },                {
                     "type": "paragraph",
                     "text": "Executing from muscle memory rather than thinking what to do gives such players much less player uncertainty than that of someone who is inexperienced within the genre, yet “Don’t Starve” nonetheless presents them with its own unique elements to adapt to, such as game-specific crafting and resource collection."
-                },                {
+                },                                              {
+                    "type": "imagePair",
+                    "images": [
+                        "../../Media/Games/GameBlogs/DontStarve/CollectingResources.png"
+                    ]
+                },    {
                     "type": "paragraph",
                     "text": "Whilst “Don’t Starve” creates stress through its survival systems, this is not an unintended side effect, but rather a deliberate part of its engagement design. The early game is deliberately unforgiving, with limited resources, minimal guidance, and fast failure states such as early death from hunger or nighttime exposure. While this initially creates high mental pressure, its purpose is not simply to overwhelm the player, but to force engagement with the game’s systems through repetition."
                 },                {
@@ -57,14 +81,8 @@
                 },                {
                     "type": "paragraph",
                     "text": "“Don’t Starve” is a perfect example of how time pressure functions as far more than a simple difficulty mechanic. Through its cyclical day/night structure, interconnected survival systems, and procedurally generated world, the game places players under pressure in ways that feel unpredictable and mentally demanding, especially during early gameplay. However, this stress is directly tied to the learning process of the game, as repeated failure gradually teaches players how to interpret and respond to its systems more effectively, thus reducing stress. Over time, actions that once caused panic become automatic through experience, genre literacy, and muscle memory. “Don’t Starve” converts anxiety from something overwhelming into something manageable, where progression is not measured through a single ending, but rather through the player’s growing mastery of the game."
-                },               
-               {
-                    "type": "imagePair",
-                    "images": [
-                        "../../Media/image.png",
-                        "../../Media/image.png"
-                    ]
-                }
+                }            
+
             ]
         }
     ],

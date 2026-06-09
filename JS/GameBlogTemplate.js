@@ -134,8 +134,9 @@ function renderBlogSections(sections)
             {
                 html += `
                     <div class="blog-image-pair">
-                        <img src="${block.images[0]}">
-                        <img src="${block.images[1]}">
+                        ${block.images.map(image =>
+                            `<img src="${image}" alt="">`
+                        ).join("")}
                     </div>
                 `;
             }

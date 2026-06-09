@@ -48,17 +48,17 @@
     "Blogs": [
         {
             "title": "Spiritfarer",
-            "thumbnail": "../Media/image.png",
+            "thumbnail": "../../Media/Games/GameBlogs/Spiritfarer/SpiritfarerTitleScreen.png",
             "file": "Spiritfarer.json"
         },
                 {
             "title": "Don't Starve",
-            "thumbnail": "../Media/image.png",
+            "thumbnail": "../../Media/Games/GameBlogs/DontStarve/DontStarveTitleScreen.png",
             "file": "DontStarve.json"
         },
                         {
             "title": "Until Dawn",
-            "thumbnail": "../Media/image.png",
+            "thumbnail": "../../Media/Games/GameBlogs/UntilDawn/UntilDawnTitleScreen.png",
             "file": "UntilDawn.json"
         }
     ]
