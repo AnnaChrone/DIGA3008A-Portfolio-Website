@@ -1,0 +1,58 @@
+{
+  "title": "Engineering For People Design Challenge",
+  "year": 2024,
+  "duration": "4 Months",
+  "schoolYear": "1st Year",
+  "type": ["General Engineering"],
+
+  "downloadFile": "../downloads/reverse2048.zip",
+
+  "sections": [
+    {
+      "type": "overview",
+      "heading": "Project Overview",
+      "content": "The main design proposal my team submitted for the 2024 Engineers Without Borders design challenge was a modular drip irrigation planter box, as a means to combat the food crisis in rural Pu Ngaol, Cambodia. </p><p>This planter box we designed measured 5 metres long, 3 metres wide, and 0.55 metres high. Soil would be deposited into this box, and a specific selection of leafy vegetables, such as carrots, potatoes, and tomatoes, would be grown. </p><p>The main feature of the system was that it used a drip irrigation, which allowed for significant water savings to occur on a small-holdings subsistence scale. </p><p>Furthermore, vegetable crop quality and quantity would increase, further helping to improve the ever-present food demand of the people of Pu Ngaol, Cambodia."
+    },
+
+    {
+      "type": "image",
+      "src": "../Media/Image.png",
+      "caption": "Game board layout"
+    },
+
+        {
+      "type": "image",
+      "src": "../Media/Image.png",
+      "caption": "Game board layout"
+    },
+            {
+      "type": "image",
+      "src": "../Media/Image.png",
+      "caption": "Game board layout"
+    },
+
+    {
+      "type": "contribution",
+      "heading": "My Contribution",
+      "content": "Whilst we were all responsible for the overall design and implementation of the planter box, I was responsible for the filtration system on the irrigation planter box, as all water entering the box would require filtering to ensure there was no blockage. I also worked alongside another team member to produce the financial analysis."
+    },
+
+    {
+      "type": "image",
+      "src": "../Media/Image.png",
+      "caption": "AI decision tree"
+    },
+
+    {
+      "type": "technical",
+      "heading": "Implementation & Technical Details",
+      "content": "The proposed solution combined a gravity-fed drip irrigation network, rainwater and greywater harvesting, sand-based filtration, and raised planter boxes to create a sustainable agricultural system capable of operating in regions with limited water resources and unreliable infrastructure. </p><p>Extensive engineering analysis was conducted to determine optimal water storage capacity, filtration methods, emitter types, drip rates, soil requirements, and irrigation layouts, while multiple design concepts were compared using sustainability, water conservation, complexity, and economic criteria. </p><p>The final design emphasised low-cost construction, ease of maintenance, modular scalability, and efficient water usage."
+    },
+    {
+  "type": "download",
+    "heading": "Download Drip Irrigation Planter Box Report",
+  "file": "../downloads/your-project.zip",
+  "label": "Download Report"
+}
+  ]
+}

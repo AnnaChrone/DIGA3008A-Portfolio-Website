@@ -1,0 +1,58 @@
+{
+  "title": "Crypto password-protected box",
+  "year": 2025,
+  "duration": "6 Months",
+  "schoolYear": "2nd Year",
+  "type": ["Electronics"],
+
+  "downloadFile": "../downloads/reverse2048.zip",
+
+  "sections": [
+    {
+      "type": "overview",
+      "heading": "Project Overview",
+      "content": "A subsystem for a crypto password-protected box was required to power a green LED and a relay when a correct bend angle was acquired on a SEN-10264 flex sensor.  </p><p> A gain of 4.5 was applied to the output of a Wheatstone bridge containing the sensor, and a comparator ladder containing 10 LEDs was powered using this output to show different bend angles as the flex sensor was bent. </p><p> A green LED switched on after a two-second delay if the bend angle was within the required angle bracket of 80°, and a red LED switched on if the angle was not within the bracket.  </p><p>The subsystem was simulated using LTSpice and physically implemented on a breadboard. </p><p>The measured results were a valid comparison against the simulated results and thus proved the validity of the design, confirming the operation of the subsystem. "
+    },
+
+    {
+      "type": "image",
+      "src": "../Media/Image.png",
+      "caption": "Game board layout"
+    },
+
+        {
+      "type": "image",
+      "src": "../Media/Image.png",
+      "caption": "Game board layout"
+    },
+            {
+      "type": "image",
+      "src": "../Media/Image.png",
+      "caption": "Game board layout"
+    },
+
+    {
+      "type": "contribution",
+      "heading": "My Contribution",
+      "content": "In groups of three, we were tasked to create a three-system lock box. When the correct code was entered with each substem, the next system would be powered, ultimately powering the motor at the end of the full system, opening the box. </p><p>I was responsible for creating the flex sensor substem, which is discussed in the report"
+    },
+
+    {
+      "type": "image",
+      "src": "../Media/Image.png",
+      "caption": "AI decision tree"
+    },
+
+    {
+      "type": "technical",
+      "heading": "Implementation & Technical Details",
+      "content": "A SEN-10264 flex sensor was incorporated into a Wheatstone bridge and paired with a differential amplifier with a gain of 4.5 to accurately detect bending angles. </p><p>The amplified signal drove a 10-stage comparator ladder that provided real-time visual feedback through LEDs, while dedicated verification logic identified a target bend angle of 80°. </p><p>To prevent accidental activation, a two-second RC delay was implemented before enabling a relay and green status LED, allowing power to be supplied to the next subsystem only when the correct angle was maintained. </p><p>The design was validated through LTSpice simulations and successfully reproduced on physical hardware using LM324 operational amplifiers, demonstrating close agreement between simulated and measured results despite practical component limitations. "
+    },
+    {
+  "type": "download",
+    "heading": "Download Flex Sensor Subsystem Report",
+  "file": "../downloads/your-project.zip",
+  "label": "Download Report"
+}
+  ]
+}

@@ -11,7 +11,7 @@
     {
       "type": "overview",
       "heading": "Project Overview",
-      "content": "A modified version of 2048 with reverse  merging mechanics bleeh blah blah blah A modified version of 2048 with reverse  merging mechanics bleeh blah blah blahA modified version of 2048 with reverse  merging mechanics bleeh blah blah blahA modified version of 2048 with reverse  merging mechanics bleeh blah blah blahA modified version of 2048 with reverse  merging mechanics bleeh blah blah blahA modified version of 2048 with reverse  merging mechanics bleeh blah blah blahA modified version of 2048 with reverse  merging mechanics bleeh blah blah blah "
+      "content": "The aim of this project was to create a C++ program that reads different configurations of a reverse 2048 game.</p><p> This would then be played by a simple algorithm (Greedy algorithm) and a complex algorithm (Monte Carlo algorithm) simultaneously. The program had to store the results of each game, thus determining which algorithm most efficiently beat the game. </p><p> This project was completed as the overall project for the second-year electrical engineering software development course. It was completed using C++, and functions entirely from the terminal."
     },
 
     {
@@ -34,7 +34,7 @@
     {
       "type": "contribution",
       "heading": "My Contribution",
-      "content": "Designed the movement system and AI logic..."
+      "content": "I implemented the Greedy algorithm, as well as implemented the visual display of the running algorithms. "
     },
 
     {
@@ -46,7 +46,7 @@
     {
       "type": "technical",
       "heading": "Implementation & Technical Details",
-      "content": "Built in C++ using a grid-based system..."
+      "content": "In C++, two algorithms were designed to go against each other in a game of Reverse2048. From there a winning algorithm would be decided each game. Multiple games would be played, and thus a superior algorithm could be determined."
     },
     {
   "type": "download",

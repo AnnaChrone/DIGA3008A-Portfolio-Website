@@ -1,32 +1,29 @@
-[
+[    {
+        "id": "engineeringforpeople",
+        "title": "Engineering For People Design Challenge",
+        "thumbnail": "../Media/image.png",
+        "jsonFile": "EWBProject.json"
+    },    {
+        "id": "elendesign",
+        "title": "DC Motor system",
+        "thumbnail": "../Media/image.png",
+        "jsonFile": "MagneticMotorProject.json"
+    },    {
+        "id": "micros",
+        "title": "AVR Assembly Lock Box",
+        "thumbnail": "../Media/image.png",
+        "jsonFile": "MicrosProject.json"
+    },    {
+        "id": "electronics",
+        "title": "Crypto password-protected box",
+        "thumbnail": "../Media/image.png",
+        "jsonFile": "ElectronicsProject.json"
+    },
     {
         "id": "reverse2048",
-        "title": "Reverse2048",
-        "thumbnail": "../Media/image.png",
-        "jsonFile": "reverse2048.json"
-    },
-    {
-        "id": "electronics",
-        "title": "Electronics Project",
-        "thumbnail": "../Media/image.png",
-        "jsonFile": "reverse2048.json"
-    },
-    {
-        "id": "micros",
-        "title": "AVR Assembly lockbox",
-        "thumbnail": "../Media/image.png",
-        "jsonFile": "reverse2048.json"
-    },
-    {
-        "id": "elendesign",
-        "title": "magnetic motor project",
-        "thumbnail": "../Media/image.png",
-        "jsonFile": "reverse2048.json"
-    },
-    {
-        "id": "engineeringforpeople",
-        "title": "Engineering Without Borders",
+        "title": "Reverse 2048",
         "thumbnail": "../Media/image.png",
         "jsonFile": "reverse2048.json"
     }
+
 ]

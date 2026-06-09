@@ -1,0 +1,58 @@
+{
+  "title": "DC Motor system",
+  "year": 2024,
+  "duration": "6 Months",
+  "schoolYear": "1st Year",
+  "type": ["Electromagnetics"],
+
+  "downloadFile": "../downloads/reverse2048.zip",
+
+  "sections": [
+    {
+      "type": "overview",
+      "heading": "Project Overview",
+      "content": "This project aimed to design, construct and test a direct current (DC) motor capable of lifting a R5 coin to a vertical height of one metre. </p><p>The motor converted electrical energy into mechanical energy through the interaction of electromagnetic induction. </p><p>A sensitivity analysis was performed by varying the current and the gap size between the magnets to determine their effects on torque and motor speed.</p><p>The results showed that the motor operated most effectively at a current of 2.9A and a magnet gap of 33mm. </p><p>This project illustrated how electromagnetism can be implemented to create a functional motor, highlighting the trade-offs between current consumption, coil count and motor efficiency. Ultimately, the project successfully met the aim of constructing a motor capable of lifting the R5 coin to a height of one metre."
+    },
+
+    {
+      "type": "image",
+      "src": "../Media/Image.png",
+      "caption": "Game board layout"
+    },
+
+        {
+      "type": "image",
+      "src": "../Media/Image.png",
+      "caption": "Game board layout"
+    },
+            {
+      "type": "image",
+      "src": "../Media/Image.png",
+      "caption": "Game board layout"
+    },
+
+    {
+      "type": "contribution",
+      "heading": "My Contribution",
+      "content": "The workload on this project was evenly split between me and my team member. I built the final optimally designed spinning motor piece containing the copper coil. We then worked together adjusting each piece of the motor until it worked as required."
+    },
+
+    {
+      "type": "image",
+      "src": "../Media/Image.png",
+      "caption": "AI decision tree"
+    },
+
+    {
+      "type": "technical",
+      "heading": "Implementation & Technical Details",
+      "content": "This project involved the design, construction, and optimisation of a custom direct current (DC) motor capable of lifting a R5 coin vertically by one metre. </p><p>The motor converted electrical energy into mechanical motion through electromagnetic induction, utilising a custom-built rotor, stator, split-ring commutator, permanent magnets, and copper wire coils. </p><p>A sensitivity analysis was conducted to evaluate the effects of current and magnet spacing on motor performance, revealing an optimal operating point of approximately 2.9 A with a 33 mm magnet gap. </p><p>Multiple design iterations were tested to improve efficiency, with the final design incorporating additional coils, reduced rotor weight, and improved magnet positioning to maximise torque and reduce required operating voltage. </p><p>The project demonstrated practical application of electromagnetic principles, experimental optimisation techniques, CAD-based design iteration, and electromechanical system construction, ultimately producing a functional motor that successfully met the lifting requirements."
+    },
+    {
+  "type": "download",
+    "heading": "Download DC motor system report",
+  "file": "../downloads/your-project.zip",
+  "label": "Download Report"
+}
+  ]
+}

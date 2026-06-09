@@ -336,7 +336,6 @@ ul {
 #about-me-carousel {
     grid-area: image;
 
-   /* width: 400px;*/
     height: 100%;
 
     overflow: hidden;

@@ -1,0 +1,58 @@
+{
+  "title": "AVR Assembly Lock Box",
+  "year": 2025,
+  "duration": "6 Months",
+  "schoolYear": "2nd Year",
+  "type": ["AVR Assembly, Microprocessors"],
+
+  "downloadFile": "../downloads/reverse2048.zip",
+
+  "sections": [
+    {
+      "type": "overview",
+      "heading": "Project Overview",
+      "content": "The aim of this project was to develop an access control system consisting of a keypad, servo motor and three LEDs to depict the unlock state of the system, all coded in AVR Assembly. </p><p>The system needed to compare a user-inputted code against a stored code to determine the unlock state of the system. </p><p>A basic lock system was successfully created, although it did not meet all the requirements of the project, as it only had a lock and unlock state, and did not give an opportunity to re-enter the code."
+    },
+
+    {
+      "type": "image",
+      "src": "../Media/Image.png",
+      "caption": "Game board layout"
+    },
+
+        {
+      "type": "image",
+      "src": "../Media/Image.png",
+      "caption": "Game board layout"
+    },
+            {
+      "type": "image",
+      "src": "../Media/Image.png",
+      "caption": "Game board layout"
+    },
+
+    {
+      "type": "contribution",
+      "heading": "My Contribution",
+      "content": "This was a solo project, so all contributions were made by me."
+    },
+
+    {
+      "type": "image",
+      "src": "../Media/Image.png",
+      "caption": "AI decision tree"
+    },
+
+    {
+      "type": "technical",
+      "heading": "Implementation & Technical Details",
+      "content": "This project involved the development of a keypad-based access control system programmed entirely in AVR Assembly for an ATmega328P microcontroller. </p><p>The system utilised a 4×3 matrix keypad to collect a four-digit passcode, store user input in memory buffers, and compare it against a predefined code using pointer-based memory traversal and byte-by-byte verification. </p><p>Visual feedback was provided through a series of LEDs that displayed input progress and indicated successful or failed authentication states. </p><p>Keypad scanning, debouncing, and key identification were implemented using interrupts and lookup tables, while user input was managed through a custom buffering system. </p><p>Although the original specification included a servo-driven lock mechanism and a secondary authentication attempt state, the final implementation focused on achieving reliable passcode entry and verification, as the original specification could not be achieved before deadline."
+    },
+    {
+  "type": "download",
+    "heading": "Download AVR Assembly Lock Box Report",
+  "file": "../downloads/your-project.zip",
+  "label": "Download Report"
+}
+  ]
+}
