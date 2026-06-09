@@ -353,6 +353,15 @@ ul {
     margin-right: 8vw;
 }
 
+#about-content h2 {
+    margin-top: 2rem;
+}
+
+#about-content p {
+    padding-bottom: 0;
+    margin-bottom: 1rem;
+}
+
 
 #about-page-body #contact-me {
     background-color: var(--bg-primary);
@@ -577,24 +586,31 @@ ul {
 
 
 .image-pair {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    text-align: center;
-    justify-self: center;
-    grid-auto-flow: column;
-    grid-auto-columns: 1fr;
+
     gap: 1rem;
+
     width: 100%;
-    max-width: 50rem;
     margin-bottom: 2rem;
 }
 
-.image-pair img,
 .hero-image img {
     width: 100%;
     height: auto;
     border-radius: 0.5rem;
     object-fit:scale-down;
+}
+.image-pair img {
+    flex: 0 0 auto;
+
+    height: 16rem;
+    width: auto;
+
+    object-fit: contain;
+    border-radius: 0.5rem;
 }
 
 .download-icon {
@@ -790,23 +806,25 @@ ul {
 
 
 .blog-image-pair {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    text-align: center;
-    justify-self: center;
-    grid-auto-flow: column;
-    grid-auto-columns: 1fr;
+
     gap: 1rem;
+
     width: 100%;
-    max-width: 50rem;
     margin-bottom: 2rem;
 }
 
-.blog-image-pair img{
-    width: 100%;
-    height: auto;
+.blog-image-pair img {
+    flex: 0 0 auto;
+
+    height: 16rem;
+    width: auto;
+
+    object-fit: contain;
     border-radius: 0.5rem;
-    object-fit:scale-down;
 }
 
 .download-icon {
@@ -971,7 +989,6 @@ ul {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
     width: 100%;
     margin-top: 4rem;
     margin-bottom: 2rem;
@@ -980,25 +997,22 @@ ul {
 
 
 .project-image-group {
-    display: grid;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    text-align: center;
-    justify-self: center;
-    grid-auto-flow: column;
-    grid-auto-columns: 1fr;
     gap: 1rem;
     width: 100%;
-    max-width: 50rem;
     margin-bottom: 2rem;
 }
 
 .project-image-group img,
 .project-image-block img {
-    width: 100%;
-    height: auto;
+    flex: 0 0 auto;
+    height: 16rem;
+    width: auto;
+    object-fit: contain;
     border-radius: 0.5rem;
-    object-fit:scale-down;
 }
 
 .download-icon {
