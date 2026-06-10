@@ -911,6 +911,17 @@ figcaption {
 
 }
 
+.project-card {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.project-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 #engineering-page-body h1 {
     grid-area: header;
     display: flex;
@@ -990,6 +1001,17 @@ figcaption {
         "return"
         "content"
         "contact";
+}
+
+.fade-item {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-item.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 #indiv-engineering-page-body #contact-me {

@@ -31,6 +31,101 @@ async function loadBoardGame()
     }
 }
 
+/* 
+   OBSERVER (scroll animation)
+ */
+
+function createObserver()
+{
+    return new IntersectionObserver((entries, obs) =>
+    {
+        entries.forEach(entry =>
+        {
+            if (entry.isIntersecting)
+            {
+                entry.target.classList.add("visible");
+                obs.unobserve(entry.target);
+            }
+        });
+    },
+    {
+        threshold: 0.15
+    });
+}
+
+
+function renderBoardGame(game)
+{
+    if (!game) return;
+
+    const observer = createObserver();
+
+    // TITLE
+    const titleEl = document.getElementById("game-title");
+    setText("game-title", game.title);
+
+    if (titleEl)
+    {
+        titleEl.classList.add("fade-item");
+        observer.observe(titleEl);
+    }
+
+    // META
+    const metaEl = document.getElementById("game-meta");
+    if (metaEl)
+    {
+        metaEl.innerHTML = `
+        <strong>
+            ${game.year || ""}
+            (${game.duration || ""})
+            | ${game.projectYear || ""} Project
+            <br>
+            Theme: ${(game.themes || []).join(" | ")}
+        </strong>
+        `;
+
+        metaEl.classList.add("fade-item");
+        observer.observe(metaEl);
+    }
+
+    // OVERVIEW
+    setText("overview-text", game.overview, true);
+    setImage("overview-image", game.overviewImage);
+
+    observeIfExists(observer, "overview-text");
+    observeIfExists(observer, "overview-image");
+
+    // CONTRIBUTION
+    setText("contribution-text", game.contribution, true);
+    observeIfExists(observer, "contribution-text");
+
+    renderImageGroup(
+        game.contributionImages,
+        "contribution-images",
+        observer
+    );
+
+    // PROCESS
+    setText("process-text", game.process, true);
+    observeIfExists(observer, "process-text");
+
+    renderImageGroup(
+        game.processImages,
+        "process-images",
+        observer
+    );
+
+    // MEMBERS
+    renderMembers(game.members, observer);
+
+    // LINKS
+    renderLinks(game.gameLinks, observer);
+
+    // PLAY TITLE
+    setText("play-title", `Play ${game.title}`);
+    observeIfExists(observer, "play-title");
+}
+
 
 function setText(id, value, allowHTML = false)
 {
@@ -57,73 +152,40 @@ function setImage(id, src)
     el.src = `${BASE_PATH}/${src}`;
 }
 
-
-function renderBoardGame(game)
+function observeIfExists(observer, id)
 {
-    if (!game) return;
+    const el = document.getElementById(id);
+    if (!el) return;
 
-    // TITLE
-    setText("game-title", game.title);
-
-    // META
-    setText(
-        "game-meta",
-        `
-        <strong>
-            ${game.year || ""}
-            (${game.duration || ""})
-            | ${game.projectYear || ""} Project
-            <br>
-            Theme: ${(game.themes || []).join(" | ")}
-        </strong>
-        `,
-        true
-    );
-
-    // OVERVIEW (HTML allowed)
-    setText("overview-text", game.overview, true);
-    setImage("overview-image", game.overviewImage);
-
-    // CONTRIBUTION
-    setText("contribution-text", game.contribution, true);
-    renderImageGroup(game.contributionImages, "contribution-images");
-
-    // PROCESS
-    setText("process-text", game.process, true);
-    renderImageGroup(game.processImages, "process-images");
-
-    // MEMBERS
-    renderMembers(game.members);
-
-    // LINKS
-    renderLinks(game.gameLinks);
-
-    // PLAY TITLE
-    setText("play-title", `Play ${game.title}`);
+    el.classList.add("fade-item");
+    observer.observe(el);
 }
 
 
-function renderImageGroup(images, containerId)
+
+function renderImageGroup(images, containerId, observer)
 {
     const container = document.getElementById(containerId);
-    if (!container) return;
+    if (!container || !images) return;
 
     container.innerHTML = "";
-
-    if (!images || images.length === 0) return;
 
     images.forEach(src =>
     {
         const img = document.createElement("img");
-
         img.src = `${BASE_PATH}/${src}`;
+        img.classList.add("fade-item");
 
         container.appendChild(img);
+        observer.observe(img);
     });
+
+    container.classList.add("fade-item");
+    observer.observe(container);
 }
 
 
-function renderMembers(members)
+function renderMembers(members, observer)
 {
     const list = document.getElementById("group-members");
     if (!list) return;
@@ -132,16 +194,19 @@ function renderMembers(members)
 
     if (!members) return;
 
+    list.classList.add("fade-item");
+    observer.observe(list);
+
     members.forEach(member =>
     {
         const li = document.createElement("li");
-        li.textContent = `${member.name}`;
+        li.textContent = member.name;
         list.appendChild(li);
     });
 }
 
 
-function renderLinks(links)
+function renderLinks(links, observer)
 {
     const container = document.getElementById("download-links");
     if (!container) return;
@@ -150,53 +215,55 @@ function renderLinks(links)
 
     if (!links) return;
 
-   links.forEach(link =>
-{
-    const a = document.createElement("a");
-    a.classList.add("gameLink");
+    container.classList.add("fade-item");
+    observer.observe(container);
 
-    const isExternal = link.type === "external";
-    const isDownload = link.type === "download";
-
-    //Cleaning URL
-    const cleanUrl = (link.url || "")
-        .trim()
-        .replace(/^\/+/, "");
-
-    if (isExternal)
+    links.forEach(link =>
     {
-        a.href = link.url; // external stays untouched
-        a.target = "_blank";
-        a.rel = "noopener noreferrer";
-    }
-    else
-    {
-        a.href = `${BASE_PATH}/${cleanUrl}`;
-    }
+        const a = document.createElement("a");
+        a.classList.add("gameLink");
 
-    if (isDownload)
-    {
-        a.setAttribute("download", "");
-        a.innerHTML = `
-            <svg class="download-icon" viewBox="0 0 24 24" fill="none">
-                <path d="M12 3v10m0 0l4-4m-4 4l-4-4"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"/>
-                <path d="M4 17v3h16v-3"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"/>
-            </svg>
-            <span>${link.label || "Download"}</span>
-        `;
-    }
-    else
-    {
-        a.textContent = link.label || "Link";
-    }
+        const isExternal = link.type === "external";
+        const isDownload = link.type === "download";
 
-    container.appendChild(a);
-});
+        const cleanUrl = (link.url || "")
+            .trim()
+            .replace(/^\/+/, "");
+
+        if (isExternal)
+        {
+            a.href = link.url;
+            a.target = "_blank";
+            a.rel = "noopener noreferrer";
+        }
+        else
+        {
+            a.href = `${BASE_PATH}/${cleanUrl}`;
+        }
+
+        if (isDownload)
+        {
+            a.setAttribute("download", "");
+            a.innerHTML = `
+                <svg class="download-icon" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 3v10m0 0l4-4m-4 4l-4-4"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"/>
+                    <path d="M4 17v3h16v-3"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"/>
+                </svg>
+                <span>${link.label || "Download"}</span>
+            `;
+        }
+        else
+        {
+            a.textContent = link.label || "Link";
+        }
+
+        container.appendChild(a);
+    });
 }
