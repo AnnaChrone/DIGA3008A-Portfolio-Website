@@ -25,27 +25,27 @@
     "boardGames": [
         {
             "title": "The Grid",
-            "thumbnail": "../Media/image.png",
+            "thumbnail": "../../Media/Games/BoardGames/TheGrid/TheGridTitleScreen.png",
             "file": "TheGrid.json"
         },
                 {
             "title": "Prison Break",
-            "thumbnail": "../Media/image.png",
+            "thumbnail": "../../Media/Games/BoardGames/PrisonBreak/PrisonBreakTitleScreen.png",
             "file": "PrisonBreak.json"
         },
                 {
             "title": "Linchpin",
-            "thumbnail": "../Media/image.png",
+            "thumbnail": "../../Media/Games/Boardgames/Linchpin/LinchPinSet.png",
             "file": "LinchPin.json"
         },
                 {
             "title": "Alice in Wonderland",
-            "thumbnail": "../Media/image.png",
+            "thumbnail": "../../Media/Games/Boardgames/AliceInWonderland/AliceInWonderlandTitleScreen.png",
             "file": "AliceInWonderland.json"
         },
                 {
             "title": "Hush house",
-            "thumbnail": "../Media/image.png",
+            "thumbnail": "../../Media/Games/Boardgames/HushHouse/HushHouseBoard.png",
             "file": "HushHouse.json"
         }
     ],
