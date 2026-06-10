@@ -620,9 +620,6 @@ ul {
 }
 
 
-
-
-
 /*INDIVIDUAL VIDEOGAME PAGE*/
 
 #indiv-videogame-page-body {
@@ -636,7 +633,9 @@ ul {
         "content"
         "contact";
 }
-
+#Daniel-Link {
+    font: var(--font-body);
+}
 #indiv-videogame-page-body #contact-me {
     grid-area: contact;
     background-color: var(--bg-primary);

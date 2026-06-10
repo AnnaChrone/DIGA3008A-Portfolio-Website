@@ -1,10 +1,16 @@
 
 // PERSISTENT NAV
+const BASE_PATH =
+    location.hostname === "localhost" ||
+    location.hostname === "127.0.0.1"
+        ? ""
+        : "/Portfolio";
+
 const NavBarlinks = [
-    { text: "Home", url: "/index.html" },
-    { text: "Games", url: "/HTML/Games.html" },
-    { text: "Engineering", url: "/HTML/Engineering.html" },
-    { text: "About", url: "/HTML/AboutMe.html" }
+    { text: "Home", url: `${BASE_PATH}/index.html` },
+    { text: "Games", url: `${BASE_PATH}/HTML/Games.html` },
+    { text: "Engineering", url: `${BASE_PATH}/HTML/Engineering.html` },
+    { text: "About", url: `${BASE_PATH}/HTML/AboutMe.html` }
 ];
 
 const navContainer = document.getElementById("persistent-nav");
@@ -37,17 +43,17 @@ const contactLinks = [
     {
         type: "linkedin",
         url: "https://www.linkedin.com/in/joanna-chronis-04821b3b0/",
-        icon: "/Media/ContactLinkImages/LinkedInLogo.png"
+        icon: `${BASE_PATH}/Media/ContactLinkImages/LinkedInLogo.png`
     },
         {
         type: "discord",
         url: "https://discordapp.com/users/743488118811918386",
-        icon: "/Media/ContactLinkImages/DiscordLogo.png"
+        icon: `${BASE_PATH}/Media/ContactLinkImages/LinkedInLogo.png`
     },
     {
         type: "instagram",
         url: "https://instagram.com/joanna_chronis",
-        icon: "/Media/ContactLinkImages/InstaLogo.png"
+        icon: `${BASE_PATH}/Media/ContactLinkImages/LinkedInLogo.png`
     }
 
 ];
