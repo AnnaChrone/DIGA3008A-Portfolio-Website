@@ -154,7 +154,11 @@ function renderLinks(links)
     {
         const a = document.createElement("a");
 
-        a.href = link.url || "#";
+        a.href =
+            link.type === "external"
+                ? link.url
+                : `${BASE_PATH}/${link.url}`;
+
         a.classList.add("gameLink");
 
         if (link.type === "external")

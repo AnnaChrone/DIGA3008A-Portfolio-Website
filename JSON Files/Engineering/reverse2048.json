@@ -39,7 +39,7 @@
 
     {
       "type": "image",
-      "src": "../Media/Image.png",
+      "src": "Media/Image.png",
       "caption": "AI decision tree"
     },
 

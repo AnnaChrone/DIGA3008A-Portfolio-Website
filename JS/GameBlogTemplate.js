@@ -40,8 +40,7 @@ function renderBlog(blog)
 
     document.getElementById("hero-image")
         .src =
-        blog.heroImage;
-
+        `${BASE_PATH}/${blog.heroImage}`;
 
     renderBlogSections(blog.sections);
 
@@ -57,18 +56,21 @@ function renderBlog(blog)
             const a =
                 document.createElement("a");
 
+            // Prefix local links with BASE_PATH
             a.href =
-                link.url;
+                link.type === "external"
+                    ? link.url
+                    : `${BASE_PATH}/${link.url}`;
 
             a.classList.add("gameLink");
 
-            if(link.type === "external")
+            if (link.type === "external")
             {
                 a.target = "_blank";
                 a.rel = "noopener noreferrer";
             }
 
-            if(link.type === "download")
+            if (link.type === "download")
             {
                 a.setAttribute("download", "");
 

@@ -91,7 +91,7 @@ function renderProject(project, container) {
     downloadBlock.innerHTML = `
         ${section.heading ? `<h2>${section.heading}</h2>` : ""}
             
-        <a class="download-link" href="${section.file}" download>
+        <a class="download-link" href="${BASE_PATH}/${section.file}" download>
             <svg class="download-icon" viewBox="0 0 24 24" fill="none">
                 <path d="M12 3v10m0 0l4-4m-4 4l-4-4"
                       stroke="currentColor"

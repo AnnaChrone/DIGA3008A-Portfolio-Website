@@ -43,7 +43,7 @@
     },
     {
       "label": "Download Build",
-      "url": "../../DowloadFiles/TheWitchsBrewBuild.zip",
+      "url": "DowloadFiles/TheWitchsBrewBuild.zip",
       "type": "download"
     }
   ]

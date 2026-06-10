@@ -50,12 +50,12 @@
      "gameLinks": [
     {
       "label": "Download Gamesheet",
-      "url": "../../DowloadFiles/HushHouseGamesheet.pdf",
+      "url": "DowloadFiles/HushHouseGamesheet.pdf",
       "type": "download"
     },
     {
       "label": "Download Ruleset",
-      "url": "../../DowloadFiles/HushHouseRuleset.pdf",
+      "url": "DowloadFiles/HushHouseRuleset.pdf",
       "type": "download"
     }
   ]
