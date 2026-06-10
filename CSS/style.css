@@ -1205,6 +1205,10 @@ figcaption {
         flex-wrap: wrap;
         gap: 2rem;
     }
+
+        .game-card {
+        width: 15rem;
+    }
 }
 
 /* RESPONSIVE (MOBILE)     */
@@ -1307,6 +1311,18 @@ figcaption {
 
     /* REMOVE GRID HORIZONTAL STRETCH ISSUES */
     #home-image {
+        justify-content: center;
+    }
+
+      .carousel-games {
+        gap: 0.5rem;
+    }
+
+    .game-card {
+        width: min(90vw, 15rem);
+    }
+
+    .carousel-track {
         justify-content: center;
     }
 }

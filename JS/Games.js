@@ -117,9 +117,22 @@ function renderCarousel(
         return;
     }
 
-    const visibleCards =
-        Math.min(3, items.length);
+    let visibleCards;
 
+if (window.innerWidth <= 600)
+{
+    visibleCards = 1; // Mobile
+}
+else if (window.innerWidth <= 1024)
+{
+    visibleCards = 2; // Tablet
+}
+else
+{
+    visibleCards = 3; // Desktop
+}
+
+visibleCards = Math.min(visibleCards, items.length);
     for(let i = 0; i < visibleCards; i++)
     {
         const index =
@@ -160,3 +173,29 @@ function renderCarousel(
         container.appendChild(card);
     }
 }
+
+window.addEventListener("resize", () =>
+{
+    if (!data) return;
+
+    renderCarousel(
+        data.videoGames,
+        document.getElementById("video-games"),
+        carouselState["video-games"],
+        "VideoGameTemplate.html"
+    );
+
+    renderCarousel(
+        data.boardGames,
+        document.getElementById("board-games"),
+        carouselState["board-games"],
+        "BoardGameTemplate.html"
+    );
+
+    renderCarousel(
+        data.Blogs,
+        document.getElementById("blogs"),
+        carouselState["blogs"],
+        "GameBlogTemplate.html"
+    );
+});
