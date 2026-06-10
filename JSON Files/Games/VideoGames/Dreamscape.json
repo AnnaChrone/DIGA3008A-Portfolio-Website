@@ -1,0 +1,55 @@
+{
+    "title": "Dreamscape",
+
+    "year": "2025",
+    "duration": "4 Months",
+    "projectYear": "2nd Year",
+
+    "themes": [
+        "Visual Novel",
+        "Topdown",
+        "Mystery"
+    ],
+
+    "overview": "<p>“Dreamscape” is a mystery story game with a mix of top-down and visual novel elements. It plays out the life of a college student, making choices in her day-to-day life, whilst experiencing strange dreams every time she falls asleep…</p>",
+    "overviewImage": "../../Media/image.png",
+
+    "contribution": "<p>For this submission, my responsibilities included developing scripts to link all scenes together, implementing item selection that influenced the storyline, and managing the friendship and sanity systems based on player choices. </p><p>I also implemented the logic for selecting different player endings based on the final values of these systems at the end of Chapter Two.</p><p>The sanity system was relatively straightforward to implement, as similar logic had already been developed in earlier iterations of the game. </p><p>The friendship system proved more complex however, as it involved multiple independent values. To manage this effectively, I used an Enum structure to easily reference and update the correct friendship variable.</p><p>Item implementation was handled by storing the player’s selection in a persistent player settings system, which then determined which canvas would be displayed based on whether a specific item was present. </p><p>For the ending system, I used the value of the sanity slider to determine outcomes, triggering different canvases depending on whether the value was above or below a threshold of 50.</p>",
+    "contributionImages": [
+        "../../Media/image.png",
+        "../../Media/image.png"
+    ],
+
+    "process": "<p>Overall, this project had several ups and downs. While the initial planning phase was relatively straightforward, unexpected issues made the development process more challenging than anticipated. </p><p>Despite this, there was clear improvement between the second and third prototypes, and the team chose to build on this third prototype, since feedback did not indicate any major structural issues with the game. </p><p>A significant setback occurred when the GitHub repository became corrupted due to a faulty commit and push. With only a few days remaining before the deadline, the repository had to be recreated from scratch, which placed additional pressure on the team and reduced available development time. </p><p>Overall, while the final stages of the project were rushed due to time constraints and external exam pressure, I am satisfied with what was achieved and confident in the systems that were implemented. </p><p>I look forward to building on the skills and experience gained in future development work.</p>",
+    "processImages": [
+        "../../Media/image.png",
+        "../../Media/image.png"
+    ],
+
+    "software": [
+        "Unity",
+        "Github"
+    ],
+
+    "members": [
+        {
+            "name": "Priyanka Pather"
+        },
+                {
+            "name": "Akiria Chetty"
+        }
+    ],
+
+         "gameLinks": [
+    {
+      "label": "GitHub Repo",
+      "url": "https://github.com/yourrepo",
+      "type": "external"
+    },
+    {
+      "label": "Download Build",
+      "url": "../files/ruleset.zip",
+      "type": "download"
+    }
+  ]
+}

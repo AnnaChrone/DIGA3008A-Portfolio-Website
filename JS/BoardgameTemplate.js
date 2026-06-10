@@ -31,9 +31,6 @@ async function loadBoardGame()
     }
 }
 
-/* =========================
-   SAFE HELPERS
-========================= */
 
 function setText(id, value, allowHTML = false)
 {
@@ -53,9 +50,6 @@ function setImage(id, src)
     el.src = src || "";
 }
 
-/* =========================
-   MAIN RENDER
-========================= */
 
 function renderBoardGame(game)
 {
@@ -101,10 +95,6 @@ function renderBoardGame(game)
     setText("play-title", `Play ${game.title}`);
 }
 
-/* =========================
-   IMAGE GROUP RENDER
-   (1 → many images, flexible layout)
-========================= */
 
 function renderImageGroup(images, containerId)
 {
@@ -123,9 +113,6 @@ function renderImageGroup(images, containerId)
     });
 }
 
-/* =========================
-   MEMBERS
-========================= */
 
 function renderMembers(members)
 {
@@ -139,7 +126,7 @@ function renderMembers(members)
     members.forEach(member =>
     {
         const li = document.createElement("li");
-        li.textContent = `${member.name} (${member.role})`;
+        li.textContent = `${member.name}`;
         list.appendChild(li);
     });
 }
