@@ -2,7 +2,7 @@
     "videoGames": [
         {
             "title": "Dreamscape",
-            "thumbnail": "../../Media/Games/Videogames/Dreamscape/DreamscapeTitleScreen.png",
+            "thumbnail": "Media/Games/Videogames/Dreamscape/DreamscapeTitleScreen.png",
             "file": "Dreamscape.json"
         },
         {
