@@ -22,7 +22,7 @@ function initScrollAnimations()
         threshold: 0.15
     });
 
-    // Animate headings, paragraphs, lists, carousel
+    // Animate scroll for headings, paragraphs, and lists
     const elements = document.querySelectorAll(`
         #about-content h1,
         #about-content h2,

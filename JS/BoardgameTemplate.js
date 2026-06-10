@@ -31,10 +31,7 @@ async function loadBoardGame()
     }
 }
 
-/* 
-   OBSERVER (scroll animation)
- */
-
+/* Observes for scroll animation*/
 function createObserver()
 {
     return new IntersectionObserver((entries, obs) =>

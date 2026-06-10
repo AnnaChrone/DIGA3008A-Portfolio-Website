@@ -8,7 +8,7 @@ async function loadProjects() {
         const response = await fetch(`${BASE_PATH}/JSON Files/Engineering/projects.json`);
         const projects = await response.json();
 
-        // Create IntersectionObserver for scroll animation
+        // Created for scroll animation
         const observer = new IntersectionObserver((entries, obs) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {

@@ -1,3 +1,5 @@
+
+/*This is used to ensure that the path for each link works, on both deployed and live server variant of the website */
 const BASE_PATH =
     location.hostname === "localhost" ||
     location.hostname === "127.0.0.1"

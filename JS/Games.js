@@ -118,7 +118,7 @@ function renderCarousel(
     }
 
     let visibleCards;
-
+/*Determines amount of cards visible at a time per carousel, depending on screensize */
 if (window.innerWidth <= 600)
 {
     visibleCards = 1; // Mobile

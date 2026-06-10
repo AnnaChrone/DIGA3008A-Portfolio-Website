@@ -22,6 +22,7 @@ async function loadProject() {
     }
 }
 
+/*Observes for scroll animation */
 function createObserver() {
     return new IntersectionObserver((entries, obs) => {
         entries.forEach(entry => {
@@ -146,7 +147,7 @@ function renderSingleImage(image) {
     return fig;
 }
 
-// IMAGE GROUP
+// IMAGE GROUP - Used when there are 2 or more images for a section
 function renderImageGroup(images) {
     const wrapper = document.createElement("div");
     wrapper.classList.add("project-image-group", "fade-item");

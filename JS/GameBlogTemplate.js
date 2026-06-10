@@ -156,6 +156,7 @@ function renderLinks(links, observer)
             a.rel = "noopener noreferrer";
         }
 
+        /*Includes an SVG of the download button if the link is a download */
         if (link.type === "download")
         {
             a.setAttribute("download", "");
@@ -170,7 +171,7 @@ function renderLinks(links, observer)
                           stroke="currentColor"
                           stroke-width="2"
                           stroke-linecap="round"/>
-                </svg>
+                </svg> 
                 ${link.label}
             `;
         }

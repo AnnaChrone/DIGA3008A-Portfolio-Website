@@ -33,7 +33,7 @@ body {
     --blue-700: #3b5876;
     --blue-900: #2e435e;
 }
-
+/*Colour Themes that will be toggled using localStorage*/
 .theme-green-light {
     --bg-primary: var(--green-300);
     --bg-secondary: var(--cream);
@@ -127,7 +127,6 @@ p {
     font-variation-settings:
     "wdth" 100;
     font-size: 1.2rem;
-
     line-height: 1.4;
     margin-bottom: 1rem;
 }
@@ -139,7 +138,6 @@ li {
     font-variation-settings:
     "wdth" 100;
     font-size: 1.1rem;
-
     line-height: 1.1;
     
 }
@@ -346,16 +344,12 @@ figcaption {
 
 /* ABOUT PAGE */
 
-
-/* Carousel */
 #about-page-body {
     background-color: var(--bg-secondary);
     min-height: 100vh;
     display: grid;
-    
     grid-template-columns: 1fr 400px;
     grid-template-rows: auto 1fr auto;
-
     grid-template-areas:
         "nav nav"
         "content image"
@@ -364,14 +358,10 @@ figcaption {
 
 #about-me-carousel {
     grid-area: image;
-
     height: 100%;
-
     overflow: hidden;
-
     justify-self: end;
     align-self: stretch;
-
     position: relative;
 }
 
@@ -551,7 +541,6 @@ figcaption {
 
 #indiv-boardgame-page-body {
     background-color: var(--bg-secondary);
-   /* min-height: 100vh;*/
     display: grid;
     grid-template-rows: auto auto 1fr auto;
     grid-template-areas:
@@ -591,11 +580,9 @@ figcaption {
     
 }
 
-
 #boardgame-page p {
     margin-bottom: 1rem;
 }
-
 
 .hero-image {
     display: flex;
@@ -793,7 +780,6 @@ figcaption {
 /*INDIVIDUAL GAMEBLOG PAGE*/
 #indiv-gameblog-page-body {
     background-color: var(--bg-secondary);
-   /* min-height: 100vh;*/
     display: grid;
     grid-template-rows: auto auto 1fr auto;
     grid-template-areas:
@@ -946,7 +932,6 @@ figcaption {
 
 /* CARD */
 .project-card {
-   /* background-color:var(--bg-secondary);*/
     width: 25rem;
     height: 18rem;
     display: flex;
@@ -1124,7 +1109,7 @@ figcaption {
     transform: translateY(-2px);
 }
 
-/* RESPONSIVE (TABLET)     */
+/* RESPONSIVE (TABLET)*/
 
 @media (max-width: 1024px) {
 
@@ -1141,7 +1126,7 @@ figcaption {
         font-size: 1.1rem;
     }
 
-    /* GLOBAL PAGE PADDING RELIEF */
+    /* GLOBAL PAGE PADDING*/
     #boardgame-page,
     #videogame-page,
     #blog-page,
@@ -1150,7 +1135,7 @@ figcaption {
         padding-right: 3rem;
     }
 
-    /* HOME PAGE STACK */
+
     #home-page-body {
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto auto;

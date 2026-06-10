@@ -32,7 +32,7 @@ async function loadVideoGame()
 }
 
 
-
+/*Observer for scroll animation */
 function createObserver()
 {
     return new IntersectionObserver((entries, obs) =>
