@@ -153,21 +153,24 @@ function renderLinks(links)
     links.forEach(link =>
     {
         const a = document.createElement("a");
-
-        a.href =
-            link.type === "external"
-                ? link.url
-                : `${BASE_PATH}/${link.url}`;
-
         a.classList.add("gameLink");
 
-        if (link.type === "external")
+        const isExternal = link.type === "external";
+        const isDownload = link.type === "download";
+
+        // 🔥 ONLY prepend BASE_PATH for internal assets
+        if (isExternal)
         {
+            a.href = link.url;
             a.target = "_blank";
             a.rel = "noopener noreferrer";
         }
+        else
+        {
+            a.href = `${BASE_PATH}/${link.url}`;
+        }
 
-        if (link.type === "download")
+        if (isDownload)
         {
             a.setAttribute("download", "");
 
