@@ -171,7 +171,7 @@ function renderLinks(links)
     const isExternal = link.type === "external";
     const isDownload = link.type === "download";
 
-    // ✅ CLEAN ONCE, HERE (RIGHT BEFORE USE)
+    //Cleaning URL
     const cleanUrl = (link.url || "")
         .trim()
         .replace(/^\/+/, "");

@@ -150,53 +150,53 @@ function renderLinks(links)
 
     if (!links) return;
 
-    links.forEach(link =>
+   links.forEach(link =>
+{
+    const a = document.createElement("a");
+    a.classList.add("gameLink");
+
+    const isExternal = link.type === "external";
+    const isDownload = link.type === "download";
+
+    //Cleaning URL
+    const cleanUrl = (link.url || "")
+        .trim()
+        .replace(/^\/+/, "");
+
+    if (isExternal)
     {
-        const a = document.createElement("a");
-        a.classList.add("gameLink");
+        a.href = link.url; // external stays untouched
+        a.target = "_blank";
+        a.rel = "noopener noreferrer";
+    }
+    else
+    {
+        a.href = `${BASE_PATH}/${cleanUrl}`;
+    }
 
-        const isExternal = link.type === "external";
-        const isDownload = link.type === "download";
+    if (isDownload)
+    {
+        a.setAttribute("download", "");
+        a.innerHTML = `
+            <svg class="download-icon" viewBox="0 0 24 24" fill="none">
+                <path d="M12 3v10m0 0l4-4m-4 4l-4-4"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"/>
+                <path d="M4 17v3h16v-3"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"/>
+            </svg>
+            <span>${link.label || "Download"}</span>
+        `;
+    }
+    else
+    {
+        a.textContent = link.label || "Link";
+    }
 
-        //handle download
-        if (isExternal)
-        {
-            a.href = link.url;
-            a.target = "_blank";
-            a.rel = "noopener noreferrer";
-        }
-        else if (isDownload)
-        {
-            a.href = `${BASE_PATH}/${link.url}`;
-            a.setAttribute("download", "");
-        }
-        else
-        {
-            a.href = `${BASE_PATH}/${link.url}`;
-        }
-
-        if (isDownload)
-        {
-            a.innerHTML = `
-                <svg class="download-icon" viewBox="0 0 24 24" fill="none">
-                    <path d="M12 3v10m0 0l4-4m-4 4l-4-4"
-                          stroke="currentColor"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"/>
-                    <path d="M4 17v3h16v-3"
-                          stroke="currentColor"
-                          stroke-width="2"
-                          stroke-linecap="round"/>
-                </svg>
-                <span>${link.label || "Download"}</span>
-            `;
-        }
-        else
-        {
-            a.textContent = link.label || "Link";
-        }
-
-        container.appendChild(a);
-    });
+    container.appendChild(a);
+});
 }
