@@ -1,8 +1,8 @@
 // HOME LINKS
 const Homelinks = [
-    { text: "Games", url: "./HTML/Games.html", image: "Media/games.png" },
-    { text: "Engineering Projects", url: "./HTML/Engineering.html", image: "Media/engineering.png" },
-    { text: "About Me", url: "./HTML/AboutMe.html", image: "Media/me.jpg" }
+    { text: "Games", url: "./HTML/Games.html", image: "Media/HomePageImages/Game.jpg" },
+    { text: "Engineering Projects", url: "./HTML/Engineering.html", image: "Media/HomePageImages/Engineering.png" },
+    { text: "About Me", url: "./HTML/AboutMe.html", image: "Media/HomePageImages/AboutMe.jpeg" }
 ];
 
 const homeContainer = document.getElementById("home-links");
@@ -16,7 +16,7 @@ Homelinks.forEach(homeLink => {
     homeA.textContent = homeLink.text;
     homeA.href = homeLink.url;
 
-const defaultImage = "./Media/pixel-art-style-floral-garden-illustration.jpg";
+const defaultImage = "./Media/HomePageImages/pixel-art-style-floral-garden-illustration.jpg";
 
 //when link is hovered on, the preview image will change and fade in
 homeA.addEventListener("mouseenter", () => {

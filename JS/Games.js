@@ -134,16 +134,22 @@ function renderCarousel(
         card.classList.add("game-card");
 
         card.innerHTML = `
-            <img
-                src='${BASE_PATH}/${item.thumbnail}'
-                alt="${item.title}"
-                class="game-thumbnail"
-            >
+    <img
+        src='${BASE_PATH}/${item.thumbnail}'
+        alt="${item.title}"
+        class="game-thumbnail"
+    >
 
-            <h3 class="game-title">
-                ${item.title}
-            </h3>
-        `;
+    <h3 class="game-title">
+        ${item.title}
+    </h3>
+
+    <div class="card-accordion">
+        <p class="card-overview">
+            ${item.overview || ""}
+        </p>
+    </div>
+`;
 
         card.addEventListener("click", () =>
         {

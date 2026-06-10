@@ -483,6 +483,39 @@ figcaption {
 
     cursor: pointer;
 }
+.game-card {
+    position: relative;
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* hidden overlay panel */
+.card-accordion {
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    width: 100%;
+    background: var(--bg-secondary);
+
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+
+    z-index: 10;
+    border-radius: 0 0 1rem 1rem;
+}
+
+/* show on hover */
+.game-card:hover .card-accordion {
+    max-height: 200px;
+    opacity: 1;
+    padding: 10px;
+}
 
 .game-thumbnail
 {
