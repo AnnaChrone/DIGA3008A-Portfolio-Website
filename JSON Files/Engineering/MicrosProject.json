@@ -16,20 +16,10 @@
 
     {
       "type": "image",
-      "src": "../Media/Image.png",
-      "caption": "Game board layout"
+      "src": "../../Media/EngineeringProjects/AVRAssembly/AVRFlow.png",
+      "caption": "Flow chart of intended functionality"
     },
 
-        {
-      "type": "image",
-      "src": "../Media/Image.png",
-      "caption": "Game board layout"
-    },
-            {
-      "type": "image",
-      "src": "../Media/Image.png",
-      "caption": "Game board layout"
-    },
 
     {
       "type": "contribution",
@@ -39,8 +29,8 @@
 
     {
       "type": "image",
-      "src": "../Media/Image.png",
-      "caption": "AI decision tree"
+      "src": "../../Media/EngineeringProjects/AVRAssembly/AVRDesign.png",
+      "caption": "Final Design of the lock system"
     },
 
     {
@@ -51,7 +41,7 @@
     {
   "type": "download",
     "heading": "Download AVR Assembly Lock Box Report",
-  "file": "../downloads/your-project.zip",
+  "file": "../../DowloadFiles/AVRAssemblyLockBoxReport.pdf",
   "label": "Download Report"
 }
   ]
