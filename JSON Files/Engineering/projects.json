@@ -22,7 +22,7 @@
     {
         "id": "reverse2048",
         "title": "Reverse 2048",
-        "thumbnail": "Media/image.png",
+        "thumbnail": "Media/EngineeringProjects/Reverse2048/Reverse2048Running.png",
         "jsonFile": "reverse2048.json"
     }
 

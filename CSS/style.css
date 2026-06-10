@@ -1065,4 +1065,192 @@ ul {
     transform: translateY(-2px);
 }
 
+/* RESPONSIVE (TABLET)     */
+
+@media (max-width: 1024px) {
+
+    /* GLOBAL TEXT SCALE DOWN */
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    #web-title {
+        font-size: 3.5rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
+
+    /* GLOBAL PAGE PADDING RELIEF */
+    #boardgame-page,
+    #videogame-page,
+    #blog-page,
+    #project-container {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    /* HOME PAGE STACK */
+    #home-page-body {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas:
+            "nav"
+            "header"
+            "image"
+            "links"
+            "contact";
+    }
+
+    #hero-text {
+        text-align: center;
+        padding-right: 0;
+    }
+
+    #home-links a {
+        font-size: 2rem;
+    }
+
+    /* ABOUT PAGE STACK */
+    #about-page-body {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas:
+            "nav"
+            "content"
+            "image"
+            "contact";
+    }
+
+    #about-content {
+        padding: 2rem;
+    }
+
+    /* ENGINEERING GRID SHRINK */
+    #projects-container {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 100%;
+    }
+
+    .project-card {
+        width: 100%;
+    }
+
+    .project-card:nth-child(even) {
+        transform: none; /* remove zig-zag on tablet */
+    }
+
+    /* DOWNLOAD LINKS WRAP */
+    #download-links {
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+}
+
+/* RESPONSIVE (MOBILE)     */
+
+@media (max-width: 600px) {
+
+    /* TEXT SCALE */
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    #web-title {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    /* NAV STACK */
+    #persistent-nav {
+        justify-content: center;
+        padding-right: 0;
+    }
+
+    #persistent-nav ul {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    /* HOME PAGE STACK */
+    #home-page-body {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "nav"
+            "header"
+            "image"
+            "links"
+            "contact";
+    }
+
+    #home-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    #home-links a {
+        font-size: 1.6rem;
+    }
+
+    /* ABOUT CAROUSEL FIX */
+    #about-page-body {
+        grid-template-columns: 1fr;
+    }
+
+    #about-me-carousel {
+        height: 300px;
+    }
+
+    /* ENGINEERING CARDS STACK */
+    #projects-container {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+
+    .project-card {
+        margin-bottom: 3rem;
+    }
+
+    /* INDIV PAGES REMOVE HUGE PADDING */
+    #boardgame-page,
+    #videogame-page,
+    #blog-page,
+    #project-container {
+        padding-left: 1.2rem;
+        padding-right: 1.2rem;
+    }
+
+    /* IMAGE GROUPS STACK NICELY */
+    .image-pair,
+    .blog-image-pair,
+    .project-image-group {
+        flex-direction: column;
+    }
+
+    /* DOWNLOAD LINKS STACK */
+    #download-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    /* HERO IMAGE FIX */
+    .hero-image img {
+        max-width: 100%;
+    }
+
+    /* REMOVE GRID HORIZONTAL STRETCH ISSUES */
+    #home-image {
+        justify-content: center;
+    }
+}
+
+
 
