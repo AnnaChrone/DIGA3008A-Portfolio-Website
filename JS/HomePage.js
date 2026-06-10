@@ -17,6 +17,7 @@ Homelinks.forEach(homeLink => {
     homeA.href = homeLink.url;
 
 const defaultImage = "./Media/HomePageImages/pixel-art-style-floral-garden-illustration.jpg";
+previewImage.src = defaultImage;
 
 //when link is hovered on, the preview image will change and fade in
 homeA.addEventListener("mouseenter", () => {
