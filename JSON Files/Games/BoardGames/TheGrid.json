@@ -12,17 +12,17 @@
     ],
 
     "overview": "<p>“The Grid” is an intense two-player strategy board game, where players race to be first to get their pieces into the home base using teleports, blocking tactics and pure logic. </p>",
-    "overviewImage": "Media/Games/BoardGames/TheGrid/TheGridTitleScreen.png",
+    "overviewImage": "Media/Games/Boardgames/TheGrid/TheGridTitleScreen.png",
 
     "contribution": "<p>The full game was developed together as a group, and I wrote the ruleset.</p>",
     "contributionImages": [
-        "Media/Games/BoardGames/TheGrid/TheGridBoard.png"
+        "Media/Games/Boardgames/TheGrid/TheGridBoard.png"
     ],
 
     "process": "<p>Through repeated playtests, the design evolved from a simple race-to-the-end concept into a more complex system incorporating different wall zones and restrictions, bonus blocks, and teleporting squares, which significantly increased strategic depth. A key design decision was changing the win condition from getting all six pieces home, to allowing one piece to remain as a dedicated defender, creating more meaningful endgames and reducing repetitive “last piece” races. The playtesting process highlighted the game’s main strength: multiple viable strategies with no dominant approach.It also highlighted a notable weakness: players could exploit a teleport-plus-bonus-block loop to advance pieces repeatedly along the same route, creating shallower gameplay.</p>",
     "processImages": [
-        "Media/Games/BoardGames/TheGrid/TheGridBoardSetUp.png",
-        "Media/Games/BoardGames/TheGrid/TheGridMove.png"
+        "Media/Games/Boardgames/TheGrid/TheGridBoardSetUp.png",
+        "Media/Games/Boardgames/TheGrid/TheGridMove.png"
     ],
 
     "members": [

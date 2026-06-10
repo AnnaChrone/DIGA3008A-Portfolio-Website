@@ -12,16 +12,16 @@
     ],
 
     "overview":"<p>“Starship Salvage” is a first-person adventure game following the crashlanding of a spaceship on a strange and unknown planet. The player must interact with the aliens on the planet and rebuild their ship using these aliens’ help.</p>",
-    "overviewImage": "Media/Games/Videogames/StarshipSalvage/StarshipSalvageStart.png",
+    "overviewImage": "Media/Games/VideoGames/StarshipSalvage/StarshipSalvageStart.png",
 
     "contribution": "<p>For this game, we were required to create all assets ourselves. I was therefore responsible for all code, and all level and game development, so that we would have enough time to create all the assets needed. The entire coding development aspect of the game, except for the dialogue system, was integrated and implemented by me.</p>",
     "contributionImages": [
-        "Media/Games/Videogames/StarshipSalvage/StarshipSalvageDialogue.png"
+        "Media/Games/VideoGames/StarshipSalvage/StarshipSalvageDialogue.png"
     ],
 
     "process":"<p>Process followed an iterative approach, with all major systems such as dialogue, quests, and the special ability fruits being developed first. </p><p> From there, all supporting systems for each in-game day were produced, following the order of the days. </p><p> The biggest issue was integrating the assets and animations within the game, as this was our first time dealing with a project of this scope, thus causing there to be some glitches with the animations and assets. </p>",
     "processImages": [
-        "Media/Games/Videogames/StarshipSalvage/StarshipSalvageMap.png"
+        "Media/Games/VideoGames/StarshipSalvage/StarshipSalvageMap.png"
     ],
 
     "software": [

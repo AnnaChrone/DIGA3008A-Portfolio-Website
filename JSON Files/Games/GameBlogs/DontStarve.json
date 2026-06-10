@@ -5,7 +5,7 @@
 
     "publishDate": "13 May 2026",
 
-    "heroImage": "../../Media/Games/GameBlogs/DontStarve/DontStarveTitleScreen.png",
+    "heroImage": "Media/Games/GameBlogs/DontStarve/DontStarveTitleScreen.png",
 
     "sections": [
         {
@@ -67,7 +67,7 @@
                 },                                              {
                     "type": "imagePair",
                     "images": [
-                        "../../Media/Games/GameBlogs/DontStarve/CollectingResources.png"
+                        "Media/Games/GameBlogs/DontStarve/CollectingResources.png"
                     ]
                 },    {
                     "type": "paragraph",

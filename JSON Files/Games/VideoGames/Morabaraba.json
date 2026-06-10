@@ -12,16 +12,16 @@
     ],
 
     "overview":"<p>This project was the creation of an online multiplayer platform for the traditional African game “Morabaraba”. </p><p>It implements two traditional strategy games—“Morabaraba” and “Six Men’s Morris”—adapted into a fully networked digital environment that supports account creation, lobby making, synchronised turn-based gameplay, and persistent player statistics. </p><p>The system is designed around a client–host multiplayer architecture using Unity’s Netcode for GameObjects and Unity Relay, enabling low-latency gameplay while still maintaining secure and synchronised game states across all connected devices. </p><p>In addition to core gameplay functionality, the platform integrates cloud-based services for authentication, data persistence, and lobby management.</p>",
-    "overviewImage": "Media/Games/Videogames/Morabaraba/MorabarabaWelcome.png",
+    "overviewImage": "Media/Games/VideoGames/Morabaraba/MorabarabaWelcome.png",
 
     "contribution": "<p>My total individual contribution towards the development of the “Morabaraba” online multiplayer platform consisted of implementing all core game logic and UI systems for the platform. </p><p>This included slot management, movement validation, mill detection, win conditions, audio integration, forfeit functionality, lobby return logic, rewind feature, timer systems, pause functionality, a fully functioning “Six Men’s Morris” variant, and all testing of the abovementioned functions and features. </p><p>game logic was implemented within a network-aware GameController that separates game mechanics from multiplayer transport, allowing the game to function correctly regardless of networking state.</p>",
     "contributionImages": [
-        "Media/Games/Videogames/Morabaraba/MorabarabaHosting.png"
+        "Media/Games/VideoGames/Morabaraba/MorabarabaHosting.png"
     ],
 
     "process":"<p>The initial focus was on implementing the basic rules of the game, including placing pieces, moving pieces, and enforcing turn-based gameplay. </p><p>Once this foundation was stable, work was done on key game logic such as mill detection, capturing rules, and win conditions to ensure the game followed correct “Morabaraba” mechanics. </p><p>Once the core systems were working, attention shifted to UI and player feedback. This included adding visual slot states, selection highlighting, and clear indicators for mills and player ownership so that the game state was easy to understand. </p><p>Audio feedback and basic utility features such as forfeiting, exiting the game, and returning to the lobby were then added to improve usability and overall player experience. </p><p>Once the main gameplay loop was complete, more complex features like the rewind system and timer system were implemented. These required additional work to properly manage the game state, especially when undoing moves or handling time-based turn changes. </p><p>Finally, multiplayer networking and testing were refined, focusing on keeping both players’ game states synchronised and fixing edge cases that appeared during online play.</p>",
     "processImages": [
-        "Media/Games/Videogames/Morabaraba/MorabarabaGame.png"
+        "Media/Games/VideoGames/Morabaraba/MorabarabaGame.png"
     ],
 
     "software": [
