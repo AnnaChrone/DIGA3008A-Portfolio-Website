@@ -171,12 +171,17 @@ function renderLinks(links)
         const isExternal = link.type === "external";
         const isDownload = link.type === "download";
 
-        // 🔥 ONLY prepend BASE_PATH for internal assets
+        //handle download first
         if (isExternal)
         {
             a.href = link.url;
             a.target = "_blank";
             a.rel = "noopener noreferrer";
+        }
+        else if (isDownload)
+        {
+            a.href = `${BASE_PATH}/${link.url}`;
+            a.setAttribute("download", "");
         }
         else
         {
@@ -185,8 +190,6 @@ function renderLinks(links)
 
         if (isDownload)
         {
-            a.setAttribute("download", "");
-
             a.innerHTML = `
                 <svg class="download-icon" viewBox="0 0 24 24" fill="none">
                     <path d="M12 3v10m0 0l4-4m-4 4l-4-4"
