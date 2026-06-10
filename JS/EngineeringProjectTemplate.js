@@ -22,12 +22,27 @@ async function loadProject() {
     }
 }
 
+function createObserver() {
+    return new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+                obs.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.15
+    });
+}
+
 function renderProject(project, container) {
     container.innerHTML = "";
 
-    //Project Title
+    const observer = createObserver();
+
+    // Project Title
     const header = document.createElement("section");
-    header.classList.add("project-header");
+    header.classList.add("project-header", "fade-item");
 
     header.innerHTML = `
         <h1>${project.title}</h1>
@@ -36,16 +51,15 @@ function renderProject(project, container) {
     `;
 
     container.appendChild(header);
+    observer.observe(header);
 
-    //Rendering each section of the project
     let i = 0;
 
     while (i < project.sections.length) {
         const section = project.sections[i];
 
-        //Image grouping logic
+        // IMAGE GROUPING LOGIC
         if (section.type === "image") {
-
             const images = [];
 
             while (
@@ -57,22 +71,26 @@ function renderProject(project, container) {
             }
 
             if (images.length === 1) {
-                renderSingleImage(images[0], container);
+                const el = renderSingleImage(images[0]);
+                container.appendChild(el);
+                observer.observe(el);
             } else {
-                renderImageGroup(images, container);
+                const el = renderImageGroup(images);
+                container.appendChild(el);
+                observer.observe(el);
             }
 
             continue;
         }
 
-        //Text sections
+        // TEXT BLOCKS
         if (
             section.type === "overview" ||
             section.type === "contribution" ||
             section.type === "technical"
         ) {
             const block = document.createElement("section");
-            block.classList.add("project-text-block");
+            block.classList.add("project-text-block", "fade-item");
 
             block.innerHTML = `
                 <h2>${section.heading}</h2>
@@ -80,58 +98,58 @@ function renderProject(project, container) {
             `;
 
             container.appendChild(block);
+            observer.observe(block);
         }
 
-//If block type is download
+        // DOWNLOAD BLOCK
         if (section.type === "download") {
+            const downloadBlock = document.createElement("section");
+            downloadBlock.classList.add("project-download-block", "fade-item");
 
-    const downloadBlock = document.createElement("section");
-    downloadBlock.classList.add("project-download-block");
+            downloadBlock.innerHTML = `
+                ${section.heading ? `<h2>${section.heading}</h2>` : ""}
+                <a class="download-link" href="${BASE_PATH}/${section.file}" download>
+                    <svg class="download-icon" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 3v10m0 0l4-4m-4 4l-4-4"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"/>
+                        <path d="M4 17v3h16v-3"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"/>
+                    </svg>
 
-    downloadBlock.innerHTML = `
-        ${section.heading ? `<h2>${section.heading}</h2>` : ""}
-            
-        <a class="download-link" href="${BASE_PATH}/${section.file}" download>
-            <svg class="download-icon" viewBox="0 0 24 24" fill="none">
-                <path d="M12 3v10m0 0l4-4m-4 4l-4-4"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"/>
-                <path d="M4 17v3h16v-3"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"/>
-            </svg>
+                    ${section.label}
+                </a>
+            `;
 
-            ${section.label}
-        </a>
-    `;
-
-    container.appendChild(downloadBlock);
-}
+            container.appendChild(downloadBlock);
+            observer.observe(downloadBlock);
+        }
 
         i++;
     }
 }
 
-//Rendering for if there is only one image between text
-function renderSingleImage(image, container) {
+// SINGLE IMAGE
+function renderSingleImage(image) {
     const fig = document.createElement("figure");
-    fig.classList.add("project-image-block");
+    fig.classList.add("project-image-block", "fade-item");
 
     fig.innerHTML = `
         <img src="${BASE_PATH}/${image.src}" alt="${image.caption || ""}">
         ${image.caption ? `<figcaption>${image.caption}</figcaption>` : ""}
     `;
 
-    container.appendChild(fig);
+    return fig;
 }
 
-//Rendering for if there are multiple images in a row
-function renderImageGroup(images, container) {
+// IMAGE GROUP
+function renderImageGroup(images) {
     const wrapper = document.createElement("div");
-    wrapper.classList.add("project-image-group");
+    wrapper.classList.add("project-image-group", "fade-item");
 
     images.forEach(img => {
         const fig = document.createElement("figure");
@@ -144,5 +162,5 @@ function renderImageGroup(images, container) {
         wrapper.appendChild(fig);
     });
 
-    container.appendChild(wrapper);
+    return wrapper;
 }

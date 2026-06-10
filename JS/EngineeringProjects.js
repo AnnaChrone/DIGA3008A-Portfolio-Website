@@ -8,6 +8,18 @@ async function loadProjects() {
         const response = await fetch(`${BASE_PATH}/JSON Files/Engineering/projects.json`);
         const projects = await response.json();
 
+        // Create IntersectionObserver for scroll animation
+        const observer = new IntersectionObserver((entries, obs) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("visible");
+                    obs.unobserve(entry.target); // animate only once
+                }
+            });
+        }, {
+            threshold: 0.15
+        });
+
         projects.forEach(project => {
             const card = document.createElement("article");
             card.classList.add("project-card");
@@ -29,6 +41,9 @@ async function loadProjects() {
             });
 
             container.appendChild(card);
+
+            // Start observing after it's added to DOM
+            observer.observe(card);
         });
 
     } catch (error) {
