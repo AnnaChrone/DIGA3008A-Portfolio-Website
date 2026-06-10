@@ -25,7 +25,7 @@
                 {
                     "type": "imagePair",
                     "images": [
-                        "../../Media/Games/GameBlogs/Spiritfarer/StellaCharon.png"
+                        "Media/Games/GameBlogs/Spiritfarer/StellaCharon.png"
                     ]
                 },
                 {
@@ -35,7 +35,7 @@
                 {
                     "type": "imagePair",
                     "images": [
-                        "../../Media/Games/GameBlogs/Spiritfarer/SummerEverdoor.png"
+                        "Media/Games/GameBlogs/Spiritfarer/SummerEverdoor.png"
                     ]
                 },
                 {
@@ -45,8 +45,8 @@
                 {
                     "type": "imagePair",
                     "images": [
-                        "../../Media/Games/GameBlogs/Spiritfarer/GwenLikes.png",
-                        "../../Media/Games/GameBlogs/Spiritfarer/SummerQuest.png"
+                        "Media/Games/GameBlogs/Spiritfarer/GwenLikes.png",
+                        "Media/Games/GameBlogs/Spiritfarer/SummerQuest.png"
                     ]
                 },
                 {
@@ -60,7 +60,7 @@
                 {
                     "type": "imagePair",
                     "images": [
-                        "../../Media/Games/GameBlogs/Spiritfarer/GwenEverdoor.png"
+                        "Media/Games/GameBlogs/Spiritfarer/GwenEverdoor.png"
                     ]
                 },
                 {
@@ -74,8 +74,8 @@
                 {
                     "type": "imagePair",
                     "images": [
-                        "../../Media/Games/GameBlogs/Spiritfarer/SummerSpiritFlower.png",
-                        "../../Media/Games/GameBlogs/Spiritfarer/BoatUpgrade.png"
+                        "Media/Games/GameBlogs/Spiritfarer/SummerSpiritFlower.png",
+                        "Media/Games/GameBlogs/Spiritfarer/BoatUpgrade.png"
                     ]
                 },
                 {

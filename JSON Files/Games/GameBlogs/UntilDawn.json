@@ -5,7 +5,7 @@
 
     "publishDate": "13 May 2026",
 
-    "heroImage": "../../Media/Games/GameBlogs/UntilDawn/UntilDawnTitleScreen.png",
+    "heroImage": "Media/Games/GameBlogs/UntilDawn/UntilDawnTitleScreen.png",
 
     "sections": [
         {
@@ -23,7 +23,7 @@
                                                 {
                     "type": "imagePair",
                     "images": [
-                        "../../Media/Games/GameBlogs/UntilDawn/ButterflyEffects.png"
+                        "Media/Games/GameBlogs/UntilDawn/ButterflyEffects.png"
                     ]
                 },  
                 {
@@ -32,7 +32,7 @@
                 },                                                {
                     "type": "imagePair",
                     "images": [
-                        "../../Media/Games/GameBlogs/UntilDawn/RatsWithBushyTails.png"
+                        "Media/Games/GameBlogs/UntilDawn/RatsWithBushyTails.png"
                     ]
                 },  
                 {
@@ -42,7 +42,7 @@
                                                                 {
                     "type": "imagePair",
                     "images": [
-                        "../../Media/Games/GameBlogs/UntilDawn/TotemColours.png"
+                        "Media/Games/GameBlogs/UntilDawn/TotemColours.png"
                     ]
                 },  
                 {
@@ -59,8 +59,8 @@
                 },                                                {
                     "type": "imagePair",
                     "images": [
-                        "../../Media/Games/GameBlogs/UntilDawn/WashingtonLodge.png",
-                        "../../Media/Games/GameBlogs/UntilDawn/EmilyForest.png"
+                        "Media/Games/GameBlogs/UntilDawn/WashingtonLodge.png",
+                        "Media/Games/GameBlogs/UntilDawn/EmilyForest.png"
                     ]
                 },  
                 {
@@ -70,7 +70,7 @@
                 {
                     "type": "imagePair",
                     "images": [
-                        "../../Media/Games/GameBlogs/UntilDawn/ChrisChoice.png"
+                        "Media/Games/GameBlogs/UntilDawn/ChrisChoice.png"
                     ]
                 },
                 {

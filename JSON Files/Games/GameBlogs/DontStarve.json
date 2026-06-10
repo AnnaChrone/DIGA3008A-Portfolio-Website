@@ -25,9 +25,9 @@
                                 {
                     "type": "imagePair",
                     "images": [
-                        "../../Media/Games/GameBlogs/DontStarve/HungerSanityHealth.png",
-                        "../../Media/Games/GameBlogs/DontStarve/DuskWarningMessage.png",
-                        "../../Media/Games/GameBlogs/DontStarve/MonsterWarningMessage.png"
+                        "Media/Games/GameBlogs/DontStarve/HungerSanityHealth.png",
+                        "Media/Games/GameBlogs/DontStarve/DuskWarningMessage.png",
+                        "Media/Games/GameBlogs/DontStarve/MonsterWarningMessage.png"
                     ]
                 },        
                 {
@@ -45,7 +45,7 @@
                 },                                   {
                     "type": "imagePair",
                     "images": [
-                        "../../Media/Games/GameBlogs/DontStarve/SanityHallucination.png"
+                        "Media/Games/GameBlogs/DontStarve/SanityHallucination.png"
                     ]
                 },               {
                     "type": "paragraph",
@@ -56,7 +56,7 @@
                 },                                       {
                     "type": "imagePair",
                     "images": [
-                        "../../Media/Games/GameBlogs/DontStarve/Map.png"
+                        "Media/Games/GameBlogs/DontStarve/Map.png"
                     ]
                 },           {
                     "type": "paragraph",
