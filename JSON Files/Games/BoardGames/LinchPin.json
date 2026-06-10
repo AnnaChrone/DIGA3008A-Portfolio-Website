@@ -12,13 +12,13 @@
     ],
 
     "overview": "<p>Be the first player to arrange five cards, including your linchpin card, in a sequential order of rank and matching colour.</p>",
-    "overviewImage": "../../Media/Games/Boardgames/Linchpin/LinchPinSet.png",
+    "overviewImage": "Media/Games/Boardgames/Linchpin/LinchPinSet.png",
 
     "contribution": "<p>The group worked together as a whole, developing the game during each build session. I then wrote up the final document of the ruleset.</p>",
 
     "process": "<p>The core gameplay revolves around a secret <q>linchpin</q> card that determines the colour and range of a five-card sequential set each player must assemble in order to win. </p><p>Players strategically draw, discard, and manipulate cards while attempting to infer opponents’ objectives and protect their own progress. </p><p>The game incorporates a variety of special card abilities, including card swapping, turn manipulation, discard pile searching, defensive counters, and wildcard substitutions, creating multiple paths to victory and encouraging tactical decision-making. </p><p>Extensive balancing and rules development were undertaken to ensure that the hidden-information system, special abilities, and sequence-building mechanics worked together to create a game that rewards planning, adaptability, and player interaction, while maintaining accessibility and replayability.</p>",
     "processImages": [
-        "../../Media/Games/Boardgames/Linchpin/LinchPinSet2.png"
+        "Media/Games/Boardgames/Linchpin/LinchPinSet2.png"
     ],
 
     "members": [

@@ -5,7 +5,7 @@ async function loadProjects() {
     const container = document.getElementById("projects-container");
 
     try {
-        const response = await fetch("../JSON Files/Engineering/projects.json");
+        const response = await fetch(`${BASE_PATH}/JSON Files/Engineering/projects.json`);
         const projects = await response.json();
 
         projects.forEach(project => {
