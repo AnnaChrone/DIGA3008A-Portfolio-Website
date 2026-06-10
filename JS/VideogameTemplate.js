@@ -169,24 +169,17 @@ function renderLinks(links)
         a.classList.add("gameLink");
 
         const isExternal = link.type === "external";
-        const isDownload = link.type === "download";
+const isDownload = link.type === "download";
 
-        //handle download first
-        if (isExternal)
-        {
-            a.href = link.url;
-            a.target = "_blank";
-            a.rel = "noopener noreferrer";
-        }
-        else if (isDownload)
-        {
-            a.href = `${BASE_PATH}/${link.url}`;
-            a.setAttribute("download", "");
-        }
-        else
-        {
-            a.href = `${BASE_PATH}/${link.url}`;
-        }
+let href = "";
+
+if (isExternal) {
+    href = link.url;
+} else {
+    href = `${BASE_PATH}/${link.url.replace(/^\/+/, "")}`;
+}
+
+a.href = href;
 
         if (isDownload)
         {
