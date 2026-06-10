@@ -263,7 +263,14 @@ figcaption {
     background-color: var(--bg-primary);
 
     display: grid;
-    grid-template-rows: auto auto 1fr auto;
+    min-height: 100dvh;
+    background-color: var(--bg-primary);
+    grid-template-rows:
+        auto
+        auto
+        1fr
+        auto;
+
     grid-template-columns: 1.8fr 1.2fr;
 
     grid-template-areas:
