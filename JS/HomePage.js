@@ -1,8 +1,8 @@
 // HOME LINKS
 const Homelinks = [
-    { text: "Games", url: "./HTML/Games.html", image: "./Media/games.png" },
-    { text: "Engineering Projects", url: "./HTML/Engineering.html", image: "./Media/engineering.png" },
-    { text: "About Me", url: "./HTML/AboutMe.html", image: "./Media/me.jpg" }
+    { text: "Games", url: "./HTML/Games.html", image: "Media/games.png" },
+    { text: "Engineering Projects", url: "./HTML/Engineering.html", image: "Media/engineering.png" },
+    { text: "About Me", url: "./HTML/AboutMe.html", image: "Media/me.jpg" }
 ];
 
 const homeContainer = document.getElementById("home-links");
@@ -23,7 +23,7 @@ homeA.addEventListener("mouseenter", () => {
     previewImage.style.opacity = 0;
 
     setTimeout(() => {
-        previewImage.src = `${BASE_PATH}/homeLink.image`;
+        previewImage.src = `${BASE_PATH}/${homeLink.image}`;
         previewImage.style.opacity = 1;
     }, 150);
 });

@@ -16,7 +16,7 @@ function getCurrentTheme() {
 }
 
 function getMode() {
-    return localStorage.getItem("mode"); // "light" | "dark"
+    return localStorage.getItem("mode"); // "light" or "dark"
 }
 
 function setMode(mode) {
