@@ -15,7 +15,7 @@ async function loadVideoGame()
     try
     {
         const response = await fetch(
-            `../JSON Files/Games/VideoGames/${gameFile}`
+            `${BASE_PATH}/JSON Files/Games/VideoGames/${gameFile}`
         );
 
         if (!response.ok)
@@ -54,7 +54,13 @@ function setImage(id, src)
     const el = document.getElementById(id);
     if (!el) return;
 
-    el.src = src || "";
+    if (!src)
+    {
+        el.src = "";
+        return;
+    }
+
+    el.src = `${BASE_PATH}/${src}`;
 }
 
 
@@ -102,7 +108,12 @@ function renderImageGroup(images, containerId)
     images.forEach(src =>
     {
         const img = document.createElement("img");
-        img.src = src;
+
+        if (src)
+        {
+            img.src = `${BASE_PATH}/${src}`;
+        }
+
         container.appendChild(img);
     });
 }

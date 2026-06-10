@@ -12,7 +12,7 @@ async function loadProject() {
     }
 
     try {
-        const response = await fetch(`../JSON Files/Engineering/${projectFile}`);
+        const response = await fetch(`${BASE_PATH}/JSON Files/Engineering/${projectFile}`);
         const project = await response.json();
 
         renderProject(project, container);
@@ -121,7 +121,7 @@ function renderSingleImage(image, container) {
     fig.classList.add("project-image-block");
 
     fig.innerHTML = `
-        <img src="${image.src}" alt="${image.caption || ""}">
+        <img src="${BASE_PATH}/${image.src}" alt="${image.caption || ""}">
         ${image.caption ? `<figcaption>${image.caption}</figcaption>` : ""}
     `;
 
@@ -137,7 +137,7 @@ function renderImageGroup(images, container) {
         const fig = document.createElement("figure");
 
         fig.innerHTML = `
-            <img src="${img.src}" alt="${img.caption || ""}">
+            <img src="${BASE_PATH}/${img.src}" alt="${img.caption || ""}">
             ${img.caption ? `<figcaption>${img.caption}</figcaption>` : ""}
         `;
 

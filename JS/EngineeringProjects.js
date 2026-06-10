@@ -15,7 +15,7 @@ async function loadProjects() {
             card.innerHTML = `
                 <img 
                     class="project-thumbnail" 
-                    src="${project.thumbnail}" 
+                    src="${BASE_PATH}/${project.thumbnail}"
                     alt="${project.title}"
                 >
                 <div class="project-title">

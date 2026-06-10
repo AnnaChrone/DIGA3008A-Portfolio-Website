@@ -14,7 +14,7 @@ console.log("BLOG FILE:", blogFile);
     {
         const response =
             await fetch(
-                `../JSON Files/Games/GameBlogs/${blogFile}`
+                `${BASE_PATH}/JSON Files/Games/GameBlogs/${blogFile}`
             );
 
         const blog =
@@ -135,7 +135,7 @@ function renderBlogSections(sections)
                 html += `
                     <div class="blog-image-pair">
                         ${block.images.map(image =>
-                            `<img src="${image}" alt="">`
+                            `<img src="${BASE_PATH}/${image}" alt="">`
                         ).join("")}
                     </div>
                 `;

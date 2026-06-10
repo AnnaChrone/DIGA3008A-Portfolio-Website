@@ -14,7 +14,7 @@ async function loadBoardGame()
     try
     {
         const response = await fetch(
-            `../JSON Files/Games/BoardGames/${gameFile}`
+            `${BASE_PATH}/JSON Files/Games/BoardGames/${gameFile}`
         );
 
         if (!response.ok)
@@ -47,7 +47,14 @@ function setImage(id, src)
 {
     const el = document.getElementById(id);
     if (!el) return;
-    el.src = src || "";
+
+    if (!src)
+    {
+        el.src = "";
+        return;
+    }
+
+    el.src = `${BASE_PATH}/${src}`;
 }
 
 
@@ -108,7 +115,9 @@ function renderImageGroup(images, containerId)
     images.forEach(src =>
     {
         const img = document.createElement("img");
-        img.src = src;
+
+        img.src = `${BASE_PATH}/${src}`;
+
         container.appendChild(img);
     });
 }
