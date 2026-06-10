@@ -1,28 +1,28 @@
 [    {
         "id": "engineeringforpeople",
         "title": "Engineering For People Design Challenge",
-        "thumbnail": "../../Media/EngineeringProjects/EWBProject/EWBDesign.png",
+        "thumbnail": "Media/EngineeringProjects/EWBProject/EWBDesign.png",
         "jsonFile": "EWBProject.json"
     },    {
         "id": "elendesign",
         "title": "DC Motor system",
-        "thumbnail": "../../Media/EngineeringProjects/DCMotor/DCMotorDesign.png",
+        "thumbnail": "Media/EngineeringProjects/DCMotor/DCMotorDesign.png",
         "jsonFile": "MagneticMotorProject.json"
     },    {
         "id": "micros",
         "title": "AVR Assembly Lock Box",
-        "thumbnail": "../../Media/EngineeringProjects/AVRAssembly/AVRDesign.png",
+        "thumbnail": "Media/EngineeringProjects/AVRAssembly/AVRDesign.png",
         "jsonFile": "MicrosProject.json"
     },    {
         "id": "electronics",
         "title": "Crypto password-protected box",
-        "thumbnail": "../../Media/EngineeringProjects/Electronics/ElectronicsDesign.jpeg",
+        "thumbnail": "Media/EngineeringProjects/Electronics/ElectronicsDesign.jpeg",
         "jsonFile": "ElectronicsProject.json"
     },
     {
         "id": "reverse2048",
         "title": "Reverse 2048",
-        "thumbnail": "../Media/image.png",
+        "thumbnail": "Media/image.png",
         "jsonFile": "reverse2048.json"
     }
 

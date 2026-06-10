@@ -16,13 +16,13 @@
 
     {
       "type": "image",
-      "src": "../../Media/EngineeringProjects/DCMotor/DCMotorCAD.png",
+      "src": "Media/EngineeringProjects/DCMotor/DCMotorCAD.png",
       "caption": "CAD render of intended design"
     },
 
         {
       "type": "image",
-      "src": "../../Media/EngineeringProjects/DCMotor/DCMotorDesign.png",
+      "src": "Media/EngineeringProjects/DCMotor/DCMotorDesign.png",
       "caption": "3D Design"
     },
 
@@ -34,7 +34,7 @@
 
     {
       "type": "image",
-      "src": "../../Media/EngineeringProjects/DCMotor/DCMotorReal.png",
+      "src": "Media/EngineeringProjects/DCMotor/DCMotorReal.png",
       "caption": "Implemented design"
     },
 
@@ -46,7 +46,7 @@
     {
   "type": "download",
     "heading": "Download DC motor system report",
-  "file": "../../DowloadFiles/DCMotorReport.pdf",
+  "file": "DowloadFiles/DCMotorReport.pdf",
   "label": "Download Report"
 }
   ]

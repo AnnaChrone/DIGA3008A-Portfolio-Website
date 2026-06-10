@@ -28,7 +28,7 @@
 
     {
       "type": "image",
-      "src": "../../Media/EngineeringProjects/Electronics/ElectronicsFlow.png",
+      "src": "Media/EngineeringProjects/Electronics/ElectronicsFlow.png",
       "caption": "Subsystem block diagram with correct angle validation logic."
     },
 
@@ -38,13 +38,13 @@
       "content": "A SEN-10264 flex sensor was incorporated into a Wheatstone bridge and paired with a differential amplifier with a gain of 4.5 to accurately detect bending angles. </p><p>The amplified signal drove a 10-stage comparator ladder that provided real-time visual feedback through LEDs, while dedicated verification logic identified a target bend angle of 80°. </p><p>To prevent accidental activation, a two-second RC delay was implemented before enabling a relay and green status LED, allowing power to be supplied to the next subsystem only when the correct angle was maintained. </p><p>The design was validated through LTSpice simulations and successfully reproduced on physical hardware using LM324 operational amplifiers, demonstrating close agreement between simulated and measured results despite practical component limitations. "
     },    {
       "type": "image",
-      "src": "../../Media/EngineeringProjects/Electronics/ElectronicsSchematics.png",
+      "src": "Media/EngineeringProjects/Electronics/ElectronicsSchematics.png",
       "caption": "System schematic showing the power supply, non-inverting differential amplifier, comparator ladder operational amplifier and correct angle RC delay."
     },
     {
   "type": "download",
     "heading": "Download Flex Sensor Subsystem Report",
-  "file": "../../DowloadFiles/FlexSensorSubsystemReport.pdf",
+  "file": "DowloadFiles/FlexSensorSubsystemReport.pdf",
   "label": "Download Report"
 }
   ]

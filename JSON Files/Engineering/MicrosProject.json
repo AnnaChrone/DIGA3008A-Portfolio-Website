@@ -16,7 +16,7 @@
 
     {
       "type": "image",
-      "src": "../../Media/EngineeringProjects/AVRAssembly/AVRFlow.png",
+      "src": "Media/EngineeringProjects/AVRAssembly/AVRFlow.png",
       "caption": "Flow chart of intended functionality"
     },
 
@@ -29,7 +29,7 @@
 
     {
       "type": "image",
-      "src": "../../Media/EngineeringProjects/AVRAssembly/AVRDesign.png",
+      "src": "Media/EngineeringProjects/AVRAssembly/AVRDesign.png",
       "caption": "Final Design of the lock system"
     },
 
@@ -41,7 +41,7 @@
     {
   "type": "download",
     "heading": "Download AVR Assembly Lock Box Report",
-  "file": "../../DowloadFiles/AVRAssemblyLockBoxReport.pdf",
+  "file": "DowloadFiles/AVRAssemblyLockBoxReport.pdf",
   "label": "Download Report"
 }
   ]

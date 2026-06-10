@@ -16,7 +16,7 @@
 
     {
       "type": "image",
-      "src": "../../Media/EngineeringProjects/EWBProject/EWBDesign.png",
+      "src": "Media/EngineeringProjects/EWBProject/EWBDesign.png",
       "caption": "Intended Design for the drip irrigation planter box"
     },
 
@@ -29,7 +29,7 @@
 
     {
       "type": "image",
-      "src": "../../Media/EngineeringProjects/EWBProject/EWBFilter.png",
+      "src": "Media/EngineeringProjects/EWBProject/EWBFilter.png",
       "caption": "Slow sand filter design."
     },
 
@@ -41,7 +41,7 @@
     {
   "type": "download",
     "heading": "Download Drip Irrigation Planter Box Report",
-  "file": "../../DowloadFiles/EngineeringForPeopleChallengeReport.pdf",
+  "file": "DowloadFiles/EngineeringForPeopleChallengeReport.pdf",
   "label": "Download Report"
 }
   ]
