@@ -2,22 +2,22 @@
     "videoGames": [
         {
             "title": "Dreamscape",
-            "thumbnail": "Media/Games/Videogames/Dreamscape/DreamscapeTitleScreen.png",
+            "thumbnail": "Media/Games/VideoGames/Dreamscape/DreamscapeTitleScreen.png",
             "file": "Dreamscape.json"
         },
         {
             "title": "Starship Salvage",
-            "thumbnail": "Media/Games/Videogames/StarshipSalvage/StarshipSalvageTitleScreen.jpg",
+            "thumbnail": "Media/Games/VideoGames/StarshipSalvage/StarshipSalvageTitleScreen.jpg",
             "file": "StarshipSalvage.json"
         },
         {
             "title": "The Witch's Brew",
-            "thumbnail": "Media/Games/Videogames/TheWitchsBrew/WitchsBrewTitleScreen.png",
+            "thumbnail": "Media/Games/VideoGames/TheWitchsBrew/WitchsBrewTitleScreen.png",
             "file": "TheWitchsBrew.json"
         },
         {
             "title": "Online Morabaraba",
-            "thumbnail": "Media/Games/Videogames/Morabaraba/MorabarabaTitleScreen.png",
+            "thumbnail": "Media/Games/VideoGames/Morabaraba/MorabarabaTitleScreen.png",
             "file": "Morabaraba.json"
         }
     ],
@@ -25,12 +25,12 @@
     "boardGames": [
         {
             "title": "The Grid",
-            "thumbnail": "Media/Games/BoardGames/TheGrid/TheGridTitleScreen.png",
+            "thumbnail": "Media/Games/Boardgames/TheGrid/TheGridTitleScreen.png",
             "file": "TheGrid.json"
         },
                 {
             "title": "Prison Break",
-            "thumbnail": "Media/Games/BoardGames/PrisonBreak/PrisonBreakTitleScreen.png",
+            "thumbnail": "Media/Games/Boardgames/PrisonBreak/PrisonBreakTitleScreen.png",
             "file": "PrisonBreak.json"
         },
                 {
