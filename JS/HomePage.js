@@ -17,13 +17,14 @@ Homelinks.forEach(homeLink => {
     homeA.href = homeLink.url;
 
 const defaultImage = "./Media/HomePageImages/pixel-art-style-floral-garden-illustration.jpg";
+previewImage.src = defaultImage;
 
 //when link is hovered on, the preview image will change and fade in
 homeA.addEventListener("mouseenter", () => {
     previewImage.style.opacity = 0;
 
     setTimeout(() => {
-        previewImage.src = `${BASE_PATH}/${homeLink.image}`;
+        previewImage.src = homeLink.image;
         previewImage.style.opacity = 1;
     }, 150);
 });
