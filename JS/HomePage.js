@@ -1,8 +1,8 @@
 // HOME LINKS
 const Homelinks = [
-    { text: "Games", url: "./HTML/Games.html", image: "Media/HomePageImages/Game.jpg" },
-    { text: "Engineering Projects", url: "./HTML/Engineering.html", image: "Media/HomePageImages/Engineering.png" },
-    { text: "About Me", url: "./HTML/AboutMe.html", image: "Media/HomePageImages/AboutMe.jpeg" }
+    { text: "Games", url: "./HTML/Games.html", image: "./Media/HomePageImages/Game.jpg" },
+    { text: "Engineering Projects", url: "./HTML/Engineering.html", image: "./Media/HomePageImages/Engineering.png" },
+    { text: "About Me", url: "./HTML/AboutMe.html", image: "./Media/HomePageImages/AboutMe.jpeg" }
 ];
 
 const homeContainer = document.getElementById("home-links");
