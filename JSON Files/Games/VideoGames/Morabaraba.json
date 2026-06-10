@@ -45,7 +45,7 @@
     },
     {
       "label": "Download Build",
-      "url": "../../DowloadFiles/OnlineMorabarabaBuild.zip",
+      "url": "DowloadFiles/OnlineMorabarabaBuild.zip",
       "type": "download"
     }
   ]

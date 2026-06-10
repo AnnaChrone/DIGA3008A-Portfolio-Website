@@ -16,19 +16,8 @@
 
     {
       "type": "image",
-      "src": "Media/Image.png",
-      "caption": "Game board layout"
-    },
-
-        {
-      "type": "image",
-      "src": "Media/Image.png",
-      "caption": "Game board layout"
-    },
-            {
-      "type": "image",
-      "src": "Media/Image.png",
-      "caption": "Game board layout"
+      "src": "Media/EngineeringProjects/Reverse2048/Reverse2048Running.png",
+      "caption": "Example of code running"
     },
 
     {
@@ -37,11 +26,6 @@
       "content": "I implemented the Greedy algorithm, as well as implemented the visual display of the running algorithms. "
     },
 
-    {
-      "type": "image",
-      "src": "Media/Image.png",
-      "caption": "AI decision tree"
-    },
 
     {
       "type": "technical",
@@ -51,7 +35,7 @@
     {
   "type": "download",
     "heading": "Download Report",
-  "file": "../downloads/your-project.zip",
+  "file": "DowloadFiles/Reverse2048Report.pdf",
   "label": "Download Project"
 }
   ]

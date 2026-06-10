@@ -121,7 +121,7 @@ h3 {
 
 
 p {
-    padding-bottom: 1.8rem;
+
     font-family: var(--font-body);
         color: var(--text-body);
     font-variation-settings:
@@ -129,7 +129,7 @@ p {
     font-size: 1.2rem;
 
     line-height: 1.4;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 li {
@@ -148,18 +148,42 @@ ul {
     padding-bottom: 1rem;
 }
 
+.theme-toggle input {
+    width: 2.5rem;       
+    height: 1.25rem;      
+    appearance: none;
+    background: var(--bg-secondary);
+    border-radius: 1.25rem;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+}
 
+.theme-toggle input::before {
+    content: "";
+    position: absolute;
+    width: 1rem;        
+    height: 1rem;        
+    background: var(--text-heading);
+    border-radius: 50%;
+    top: 0.125rem;        
+    left: 0.125rem;      
+    transition: transform 0.2s ease;
+}
 
+.theme-toggle input:checked::before {
+    transform: translateX(1.25rem); 
+}
 /* STICKY NAV */
 
 #persistent-nav {
     grid-area: nav;
     position: sticky;
-    color: var(--bg-primary);
     top: 0;
     z-index: 1000;
     margin: 0;
     padding-top: 1rem;
+    padding-right: 1rem;
     padding-bottom: 0;
     display: flex;
     justify-content: flex-end;
@@ -324,7 +348,7 @@ ul {
     background-color: var(--bg-secondary);
     min-height: 100vh;
     display: grid;
-
+    
     grid-template-columns: 1fr 400px;
     grid-template-rows: auto 1fr auto;
 
@@ -350,7 +374,8 @@ ul {
 #about-content {
     grid-area: content;
     padding: 2rem;
-    margin-right: 8vw;
+    padding-left: 5rem;
+    padding-right: 25rem;
 }
 
 #about-content h2 {
@@ -410,6 +435,7 @@ ul {
 
 #Games {
     grid-area: content;
+
 }
 
 #games-page-body h1 {
@@ -507,8 +533,8 @@ ul {
     grid-area: content;
     max-width: 1920px;
     width: 100%;
-    padding-left: 2rem;
-    padding-right: 4rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
 
 }
 
@@ -530,7 +556,7 @@ ul {
 
 
 #boardgame-page p {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 
@@ -585,6 +611,12 @@ ul {
 }
 
 
+.hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    object-fit:scale-down;
+}
 .image-pair {
     display: flex;
     flex-wrap: wrap;
@@ -592,25 +624,17 @@ ul {
     align-items: center;
 
     gap: 1rem;
-
     width: 100%;
     margin-bottom: 2rem;
+
+    align-content: flex-start;
 }
 
-.hero-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 0.5rem;
-    object-fit:scale-down;
-}
 .image-pair img {
-    flex: 0 0 auto;
-
-    height: 16rem;
+    max-height: 16rem;
     width: auto;
-
+    height: auto;
     object-fit: contain;
-    border-radius: 0.5rem;
 }
 
 .download-icon {
@@ -646,8 +670,8 @@ ul {
     grid-area: content;
     max-width: 1920px;
     width: 100%;
-    padding-left: 2rem;
-    padding-right: 4rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
 
 }
 
@@ -751,8 +775,8 @@ ul {
     grid-area: content;
     max-width: 1920px;
     width: 100%;
-    padding-left: 2rem;
-    padding-right: 4rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
 
 }
 
@@ -902,7 +926,8 @@ ul {
 
 /* TITLE */
 .project-title {
-    font-family: var(--font-body);
+    font-family: var(--font-header);
+    color: var(--text-heading);
     margin-top: 0.75rem;
     font-size: 1.1rem;
     font-weight: 500;
@@ -1040,6 +1065,192 @@ ul {
     transform: translateY(-2px);
 }
 
+/* RESPONSIVE (TABLET)     */
+
+@media (max-width: 1024px) {
+
+    /* GLOBAL TEXT SCALE DOWN */
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    #web-title {
+        font-size: 3.5rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
+
+    /* GLOBAL PAGE PADDING RELIEF */
+    #boardgame-page,
+    #videogame-page,
+    #blog-page,
+    #project-container {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    /* HOME PAGE STACK */
+    #home-page-body {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas:
+            "nav"
+            "header"
+            "image"
+            "links"
+            "contact";
+    }
+
+    #hero-text {
+        text-align: center;
+        padding-right: 0;
+    }
+
+    #home-links a {
+        font-size: 2rem;
+    }
+
+    /* ABOUT PAGE STACK */
+    #about-page-body {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas:
+            "nav"
+            "content"
+            "image"
+            "contact";
+    }
+
+    #about-content {
+        padding: 2rem;
+    }
+
+    /* ENGINEERING GRID SHRINK */
+    #projects-container {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 100%;
+    }
+
+    .project-card {
+        width: 100%;
+    }
+
+    .project-card:nth-child(even) {
+        transform: none; /* remove zig-zag on tablet */
+    }
+
+    /* DOWNLOAD LINKS WRAP */
+    #download-links {
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+}
+
+/* RESPONSIVE (MOBILE)     */
+
+@media (max-width: 600px) {
+
+    /* TEXT SCALE */
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    #web-title {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    /* NAV STACK */
+    #persistent-nav {
+        justify-content: center;
+        padding-right: 0;
+    }
+
+    #persistent-nav ul {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    /* HOME PAGE STACK */
+    #home-page-body {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "nav"
+            "header"
+            "image"
+            "links"
+            "contact";
+    }
+
+    #home-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    #home-links a {
+        font-size: 1.6rem;
+    }
+
+    /* ABOUT CAROUSEL FIX */
+    #about-page-body {
+        grid-template-columns: 1fr;
+    }
+
+    #about-me-carousel {
+        height: 300px;
+    }
+
+    /* ENGINEERING CARDS STACK */
+    #projects-container {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+
+    .project-card {
+        margin-bottom: 3rem;
+    }
+
+    /* INDIV PAGES REMOVE HUGE PADDING */
+    #boardgame-page,
+    #videogame-page,
+    #blog-page,
+    #project-container {
+        padding-left: 1.2rem;
+        padding-right: 1.2rem;
+    }
+
+    /* IMAGE GROUPS STACK NICELY */
+    .image-pair,
+    .blog-image-pair,
+    .project-image-group {
+        flex-direction: column;
+    }
+
+    /* DOWNLOAD LINKS STACK */
+    #download-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    /* HERO IMAGE FIX */
+    .hero-image img {
+        max-width: 100%;
+    }
+
+    /* REMOVE GRID HORIZONTAL STRETCH ISSUES */
+    #home-image {
+        justify-content: center;
+    }
+}
 
 
 
