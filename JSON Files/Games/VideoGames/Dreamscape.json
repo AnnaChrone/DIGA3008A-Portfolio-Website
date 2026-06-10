@@ -46,7 +46,7 @@
     },
     {
       "label": "Download Build",
-      "url": "../../DowloadFiles/DreamscapeBuild.zip",
+      "url": "DowloadFiles/DreamscapeBuild.zip",
       "type": "download"
     }
   ]

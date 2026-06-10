@@ -44,11 +44,6 @@
       "label": "GitHub Repo",
       "url": "https://github.com/AnnaChrone/Starship-Salvage",
       "type": "external"
-    },
-    {
-      "label": "Download Build",
-      "url": "../../DowloadFiles/StarshipSalvageBuild.zip",
-      "type": "download"
     }
   ]
 }
