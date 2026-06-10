@@ -4,15 +4,18 @@ let data = null;
 
 document.addEventListener("DOMContentLoaded", loadGames);
 
+
 async function loadGames()
 {
     try
     {
         const response =
-            await fetch("../JSON Files/Games/games.json");
+            await fetch(`${BASE_PATH}/JSON Files/Games/games.json`);
 
         data = await response.json();
-
+console.log("BASE_PATH:", BASE_PATH);
+console.log("Response URL:", `${BASE_PATH}/JSON Files/Games/games.json`);
+console.log("Loaded data:", data);
         createCarousel(
             "video-games",
             "video-left",
@@ -132,7 +135,7 @@ function renderCarousel(
 
         card.innerHTML = `
             <img
-                src="${item.thumbnail}"
+                src='${BASE_PATH}/${item.thumbnail}'
                 alt="${item.title}"
                 class="game-thumbnail"
             >

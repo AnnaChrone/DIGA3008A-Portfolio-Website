@@ -2,22 +2,22 @@
     "videoGames": [
         {
             "title": "Dreamscape",
-            "thumbnail": "../Media/Games/Videogames/Dreamscape/DreamscapeTitleScreen.png",
+            "thumbnail": "Media/Games/Videogames/Dreamscape/DreamscapeTitleScreen.png",
             "file": "Dreamscape.json"
         },
         {
             "title": "Starship Salvage",
-            "thumbnail": "../Media/Games/Videogames/StarshipSalvage/StarshipSalvageTitleScreen.jpg",
+            "thumbnail": "Media/Games/Videogames/StarshipSalvage/StarshipSalvageTitleScreen.jpg",
             "file": "StarshipSalvage.json"
         },
         {
             "title": "The Witch's Brew",
-            "thumbnail": "../Media/Games/Videogames/TheWitchsBrew/WitchsBrewTitleScreen.png",
+            "thumbnail": "Media/Games/Videogames/TheWitchsBrew/WitchsBrewTitleScreen.png",
             "file": "TheWitchsBrew.json"
         },
         {
             "title": "Online Morabaraba",
-            "thumbnail": "../Media/Games/Videogames/Morabaraba/MorabarabaTitleScreen.png",
+            "thumbnail": "Media/Games/Videogames/Morabaraba/MorabarabaTitleScreen.png",
             "file": "Morabaraba.json"
         }
     ],
@@ -25,27 +25,27 @@
     "boardGames": [
         {
             "title": "The Grid",
-            "thumbnail": "../../Media/Games/BoardGames/TheGrid/TheGridTitleScreen.png",
+            "thumbnail": "Media/Games/BoardGames/TheGrid/TheGridTitleScreen.png",
             "file": "TheGrid.json"
         },
                 {
             "title": "Prison Break",
-            "thumbnail": "../../Media/Games/BoardGames/PrisonBreak/PrisonBreakTitleScreen.png",
+            "thumbnail": "Media/Games/BoardGames/PrisonBreak/PrisonBreakTitleScreen.png",
             "file": "PrisonBreak.json"
         },
                 {
             "title": "Linchpin",
-            "thumbnail": "../../Media/Games/Boardgames/Linchpin/LinchPinSet.png",
+            "thumbnail": "Media/Games/Boardgames/Linchpin/LinchPinSet.png",
             "file": "LinchPin.json"
         },
                 {
             "title": "Alice in Wonderland",
-            "thumbnail": "../../Media/Games/Boardgames/AliceInWonderland/AliceInWonderlandTitleScreen.png",
+            "thumbnail": "Media/Games/Boardgames/AliceInWonderland/AliceInWonderlandTitleScreen.png",
             "file": "AliceInWonderland.json"
         },
                 {
             "title": "Hush house",
-            "thumbnail": "../../Media/Games/Boardgames/HushHouse/HushHouseBoard.png",
+            "thumbnail": "Media/Games/Boardgames/HushHouse/HushHouseBoard.png",
             "file": "HushHouse.json"
         }
     ],
@@ -53,17 +53,17 @@
     "Blogs": [
         {
             "title": "Spiritfarer",
-            "thumbnail": "../../Media/Games/GameBlogs/Spiritfarer/SpiritfarerTitleScreen.png",
+            "thumbnail": "Media/Games/GameBlogs/Spiritfarer/SpiritfarerTitleScreen.png",
             "file": "Spiritfarer.json"
         },
                 {
             "title": "Don't Starve",
-            "thumbnail": "../../Media/Games/GameBlogs/DontStarve/DontStarveTitleScreen.png",
+            "thumbnail": "Media/Games/GameBlogs/DontStarve/DontStarveTitleScreen.png",
             "file": "DontStarve.json"
         },
                         {
             "title": "Until Dawn",
-            "thumbnail": "../../Media/Games/GameBlogs/UntilDawn/UntilDawnTitleScreen.png",
+            "thumbnail": "Media/Games/GameBlogs/UntilDawn/UntilDawnTitleScreen.png",
             "file": "UntilDawn.json"
         }
     ]

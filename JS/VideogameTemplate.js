@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", loadVideoGame);
 
 async function loadVideoGame()
+
 {
     const params = new URLSearchParams(window.location.search);
     const gameFile = params.get("game");
