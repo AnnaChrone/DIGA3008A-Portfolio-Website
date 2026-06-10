@@ -2,22 +2,22 @@
     "videoGames": [
         {
             "title": "Dreamscape",
-            "thumbnail": "../Media/image.png",
+            "thumbnail": "../../Media/Games/Videogames/Dreamscape/DreamscapeTitleScreen.png",
             "file": "Dreamscape.json"
         },
         {
             "title": "Starship Salvage",
-            "thumbnail": "../Media/image.png",
+            "thumbnail": "../../Media/Games/Videogames/StarshipSalvage/StarshipSalvageTitleScreen.jpg",
             "file": "StarshipSalvage.json"
         },
         {
             "title": "The Witch's Brew",
-            "thumbnail": "../Media/image.png",
+            "thumbnail": "../../Media/Games/Videogames/TheWitchsBrew/WitchsBrewTitleScreen.png",
             "file": "TheWitchsBrew.json"
         },
         {
             "title": "Online Morabaraba",
-            "thumbnail": "../Media/image.png",
+            "thumbnail": "../../Media/Games/Videogames/Morabaraba/MorabarabaTitleScreen.png",
             "file": "Morabaraba.json"
         }
     ],

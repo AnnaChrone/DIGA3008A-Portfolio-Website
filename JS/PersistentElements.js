@@ -48,12 +48,12 @@ const contactLinks = [
         {
         type: "discord",
         url: "https://discordapp.com/users/743488118811918386",
-        icon: `${BASE_PATH}/Media/ContactLinkImages/LinkedInLogo.png`
+        icon: `${BASE_PATH}/Media/ContactLinkImages/DiscordLogo.png`
     },
     {
         type: "instagram",
         url: "https://instagram.com/joanna_chronis",
-        icon: `${BASE_PATH}/Media/ContactLinkImages/LinkedInLogo.png`
+        icon: `${BASE_PATH}/Media/ContactLinkImages/InstaLogo.png`
     }
 
 ];
