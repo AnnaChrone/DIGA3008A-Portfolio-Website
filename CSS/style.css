@@ -148,6 +148,11 @@ ul {
     padding-bottom: 1rem;
 }
 
+figcaption {
+        font-family: var(--font-body);
+        color: var(--text-body);
+}
+
 .theme-toggle input {
     width: 2.5rem;       
     height: 1.25rem;      
