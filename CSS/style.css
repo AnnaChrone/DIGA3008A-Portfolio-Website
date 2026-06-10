@@ -968,8 +968,8 @@ ul {
     grid-area: content;
     max-width: 1920px;
     width: 100%;
-    padding-left: rem;
-    padding-right: 4rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
 }
 
 .project-header {
