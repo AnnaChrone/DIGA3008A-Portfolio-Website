@@ -4,7 +4,7 @@ const BASE_PATH =
     location.hostname === "localhost" ||
     location.hostname === "127.0.0.1"
         ? ""
-        : "//DIGA3008A-Portfolio-Website";
+        : "/DIGA3008A-Portfolio-Website";
 
 const NavBarlinks = [
     { text: "Home", url: `${BASE_PATH}/index.html` },
