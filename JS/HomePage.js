@@ -23,7 +23,7 @@ homeA.addEventListener("mouseenter", () => {
     previewImage.style.opacity = 0;
 
     setTimeout(() => {
-        previewImage.src = `${BASE_PATH}/${homeLink.image}`;
+        previewImage.src = homeLink.image;
         previewImage.style.opacity = 1;
     }, 150);
 });
